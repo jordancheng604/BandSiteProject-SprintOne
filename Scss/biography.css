@@ -1,7 +1,6 @@
 @font-face {
-  font-family: 'Avenir';
-  src: url("/Assets/_Global-Font/AvenirNextProLT/Alternative-files/Linotype-Avenir-Next-LT-Pro.ttf");
-  src: url("/Assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf");
+  font-family: "Roboto";
+  src: url(/Assets/Roboto/Roboto-Regular.ttf);
 }
 
 body {
@@ -56,19 +55,20 @@ body {
 @media (min-width: 768px) {
   .navbarLogo {
     justify-self: flex-start;
-    margin: 1.5em;
+    margin: 2em;
   }
 }
 
 .--active {
-  border-bottom: 3.3px solid white;
+  border-bottom: 3.9px solid white;
   color: white;
   width: 50%;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
   .--active {
-    padding-bottom: 6.5%;
+    padding-bottom: 4.5%;
   }
 }
 
@@ -98,8 +98,8 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-top: 3%;
-    margin-right: 2%;
+    padding-top: 2.2%;
+    margin-right: 2.5%;
   }
 }
 
@@ -150,6 +150,8 @@ body {
 @media (min-width: 768px) {
   .heroArtistNames {
     font-size: 3.75em;
+    margin-left: 0.5em;
+    width: 85%;
   }
 }
 
@@ -166,6 +168,7 @@ body {
 @media (min-width: 768px) {
   .aboutTitle {
     font-size: 2.25em;
+    font-weight: bolder;
   }
 }
 
@@ -207,7 +210,8 @@ body {
 
 @media (min-width: 768px) {
   .aboutArtistQuote {
-    font-size: 1.7em;
+    font-size: 1.5em;
+    width: 90%;
   }
 }
 
@@ -252,8 +256,6 @@ body {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-size: 8.9em;
-    line-height: 1.3em;
   }
 }
 
@@ -266,7 +268,10 @@ body {
 
 @media (min-width: 768px) {
   .aboutParagraphOne {
-    width: 39%;
+    width: 47%;
+    font-weight: lighter;
+    font-size: 0.9em;
+    line-height: 1.5em;
   }
 }
 
@@ -280,7 +285,10 @@ body {
 
 @media (min-width: 768px) {
   .aboutParagraphTwo {
-    width: 39%;
+    width: 47%;
+    font-weight: lighter;
+    font-size: 0.9em;
+    line-height: 1.5em;
     margin-left: 1.5em;
   }
 }
