@@ -9,6 +9,7 @@
 @mixin tablet {
     @media (min-width: $tablet-breakpoint) {
         @content;
+        
     }
 }
 
