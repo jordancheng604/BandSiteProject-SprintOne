@@ -373,7 +373,7 @@ body {
 
 @media (min-width: 320px) {
   .photoGalleryTitle {
-    margin: 0em 0em 1.5em;
+    margin: 1em 0.5em 1em;
   }
 }
 
@@ -439,7 +439,7 @@ body {
 
 @media (min-width: 320px) {
   .photoGallery__pic {
-    width: 100%;
+    width: 18em;
   }
 }
 
@@ -552,6 +552,18 @@ body {
           justify-content: flex-start;
 }
 
+@media (min-width: 320px) {
+  .footer__topFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media (min-width: 768px) {
   .footer__topFooter {
     display: -webkit-box;
@@ -576,6 +588,7 @@ body {
   .footer__topFooter__Title {
     margin: 1em 0em 0em 0.2em;
     font-size: 2.2em;
+    width: 100%;
   }
 }
 
@@ -603,7 +616,7 @@ body {
 
 @media (min-width: 320px) {
   .footer__topFooter__SocialSection {
-    width: 40%;
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -675,6 +688,12 @@ body {
   justify-self: self-end;
   margin: 0em 0em 0em 8.2em;
   padding: 0em;
+}
+
+@media (min-width: 320px) {
+  .footer__topFooter__companyLogo {
+    display: none;
+  }
 }
 
 .footerInformationSection {

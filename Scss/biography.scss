@@ -290,7 +290,8 @@ body {
     margin: 2em 0em 1.5em;
 
     @include mobile {
-        margin: 0em 0em 1.5em;
+        margin: 1em 0.5em 1em;
+
     }
 
     @include tablet {
@@ -328,7 +329,7 @@ body {
         width: 18em;
 
         @include mobile {
-            width: 100%;
+            width: 18em;
         }
 
         @include tablet {
@@ -413,6 +414,11 @@ body {
         width: 100%;
         justify-content: flex-start;
 
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+
 
         @include tablet {
             display: flex;
@@ -444,6 +450,7 @@ body {
             @include mobile {
                 margin: 1em 0em 0em 0.2em;
                 font-size: 2.2em;
+                width: 100%;
             }
         
             @include tablet {
@@ -461,7 +468,7 @@ body {
             margin: 1em 1em 1em;
         
             @include mobile {
-                width: 40%;
+                width: 50%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -517,6 +524,10 @@ body {
             justify-self: self-end;
             margin: 0em 0em 0em 8.2em;
             padding: 0em;
+
+            @include mobile {
+                display: none;
+            }
         }
     }
 
