@@ -43,6 +43,13 @@ body {
     @include tablet {
         justify-self: flex-start;
         margin: 1em 1.5em 1em;    }
+
+    @include desktop {
+        margin: 0em 1em 1em 9.5em;
+        width: 7em;
+        height: 1.2em;
+        background-size: 90%;
+    }
 }
 
 .--active {
@@ -406,7 +413,9 @@ body {
     @include tablet {
         width: 25%;
         margin: 1.5em 0em 1em;
+        padding: 0em;
         align-self: center;
+        justify-self: center;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;

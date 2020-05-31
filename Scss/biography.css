@@ -59,6 +59,15 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .navbarLogo {
+    margin: 0em 1em 1em 9.5em;
+    width: 7em;
+    height: 1.2em;
+    background-size: 90%;
+  }
+}
+
 .--active {
   border-bottom: 3.9px solid white;
   color: white;
@@ -551,8 +560,10 @@ body {
   .footerSocialSection {
     width: 25%;
     margin: 1.5em 0em 1em;
+    padding: 0em;
     -ms-flex-item-align: center;
         align-self: center;
+    justify-self: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
