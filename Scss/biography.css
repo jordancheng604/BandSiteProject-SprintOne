@@ -194,7 +194,7 @@ body {
 @media (min-width: 768px) {
   .heroArtistNames {
     font-size: 3.75em;
-    margin: 1em 0.3em 1em;
+    margin: 1em 0.4em 1em;
     width: 85%;
   }
 }
@@ -222,6 +222,12 @@ body {
     font-size: 2.25em;
     font-weight: bolder;
     margin: 1em 0.2em 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .aboutTitle {
+    font-size: 1em;
   }
 }
 
@@ -253,6 +259,7 @@ body {
 @media (min-width: 1200px) {
   .aboutPicture {
     width: 100%;
+    height: 20em;
   }
 }
 
@@ -390,7 +397,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1em;
+  margin: 1em 1em 0em 0em;
+  background-color: #fafafa;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -527,8 +536,24 @@ body {
   line-height: 1.1em;
 }
 
+.footer__topFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 @media (min-width: 768px) {
-  .footer {
+  .footer__topFooter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -536,12 +561,11 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    width: 100%;
   }
 }
 
-.footerTitle {
+.footer__topFooter__Title {
   font-size: 1.5em;
   font-weight: bolder;
   line-height: 2em;
@@ -549,21 +573,21 @@ body {
 }
 
 @media (min-width: 320px) {
-  .footerTitle {
+  .footer__topFooter__Title {
     margin: 1em 0em 0em 0.2em;
     font-size: 2.2em;
   }
 }
 
 @media (min-width: 768px) {
-  .footerTitle {
-    font-size: 2.2em;
-    width: 28%;
-    margin: 1em 0em 1em 0em;
+  .footer__topFooter__Title {
+    font-size: 2.25em;
+    width: 29%;
+    margin: 1em 0em 1em 0.7em;
   }
 }
 
-.footerSocialSection {
+.footer__topFooter__SocialSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -578,7 +602,7 @@ body {
 }
 
 @media (min-width: 320px) {
-  .footerSocialSection {
+  .footer__topFooter__SocialSection {
     width: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -594,9 +618,9 @@ body {
 }
 
 @media (min-width: 768px) {
-  .footerSocialSection {
+  .footer__topFooter__SocialSection {
     width: 25%;
-    margin: 1.5em 0em 1em;
+    margin: 1.5em 1.8em 1em;
     padding: 0em;
     -ms-flex-item-align: center;
         align-self: center;
@@ -615,12 +639,12 @@ body {
 }
 
 @media (min-width: 768px) {
-  .footerSocialSection__block {
+  .footer__topFooter__SocialSection__block {
     width: 30%;
   }
 }
 
-.instagram {
+.footer__topFooter__instagram {
   background-image: url(/assets/Icons/SVG/Icon-instagram.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -628,7 +652,7 @@ body {
   height: 1.5em;
 }
 
-.facebook {
+.footer__topFooter__facebook {
   background-image: url(/assets/Icons/SVG/Icon-facebook.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -636,7 +660,7 @@ body {
   height: 1.5em;
 }
 
-.twitter {
+.footer__topFooter__twitter {
   background-image: url(/assets/Icons/SVG/Icon-twitter.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -644,50 +668,13 @@ body {
   height: 1.5em;
 }
 
-.footerCompanyLogo {
-  width: 1em;
-  height: auto;
-  background-image: url("/Assets/Logo/Logo-bandsite copy.svg");
-  background-repeat: no-repeat;
-  width: 9em;
-  height: 2em;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  margin-top: 16px;
+.footer__topFooter__companyLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: self-end;
+  margin: 0em 0em 0em 8.2em;
   padding: 0em;
-}
-
-@media (min-width: 320px) {
-  .footerCompanyLogo {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .footerCompanyLogo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 25%;
-    -ms-flex-item-align: center;
-        align-self: center;
-    justify-self: flex-end;
-    position: relative;
-    margin: 0em 0em 0em 0em;
-    padding: 0em 0em 0em 0em;
-  }
-}
-
-@media (min-width: 1200px) {
-  .footerCompanyLogo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 
 .footerInformationSection {

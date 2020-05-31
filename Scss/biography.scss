@@ -141,7 +141,7 @@ body {
 
     @include tablet {
         font-size: 3.75em;
-        margin: 1em 0.3em 1em;        
+        margin: 1em 0.4em 1em;        
         width: 85%;
     }
 
@@ -165,6 +165,10 @@ body {
         font-size: 2.25em;
         font-weight: bolder;
         margin: 1em 0.2em 1em;
+    }
+
+    @include desktop {
+        font-size: 1em;
     }
 
 }
@@ -192,6 +196,7 @@ body {
 
         @include desktop {
             width: 100%;
+            height: 20em;
         }
 
 }
@@ -300,7 +305,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1em;
+    margin: 1em 1em 0em 0em;
+    background-color: #fafafa;
+    width: 100%;
 
     @include tablet {
         flex-direction: row;
@@ -398,121 +405,163 @@ body {
     width: 100%;
     line-height: 1.1em;
 
-    @include tablet {
+    &__topFooter {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-    }
-    
-}
-
-.footerTitle {
-    font-size: 1.5em;
-    font-weight: bolder;
-    line-height: 2em;
-    margin: 1em;
-
-    @include mobile {
-        margin: 1em 0em 0em 0.2em;
-        font-size: 2.2em;
-    }
-
-    @include tablet {
-        font-size: 2.2em;
-        width: 28%;
-        margin: 1em 0em 1em 0em;
-    }
-}
-
-.footerSocialSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 1em 1em 1em;
-
-    @include mobile {
-        width: 40%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    @include tablet {
-        width: 25%;
-        margin: 1.5em 0em 1em;
-        padding: 0em;
-        align-self: center;
-        justify-self: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+        flex-wrap: nowrap;
+        // width: 100%;
+        width: 100%;
+        justify-content: flex-start;
 
 
-    &__block {
         @include tablet {
-            width: 30%;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            // flex-wrap: wrap;
+
+            
+
+            // .footer{
+            //     &__companyLogo {
+            //         padding-top: 40px;
+            //         // margin-top: 30px;
+            //     }
+
+                // &__companyLogo2 {
+                //     padding-top: 40px;
+                //     margin-top: 300px;
+                // }
+            // }
+        }
+        
+        &__Title {
+            font-size: 1.5em;
+            font-weight: bolder;
+            line-height: 2em;
+            margin: 1em;
+        
+            @include mobile {
+                margin: 1em 0em 0em 0.2em;
+                font-size: 2.2em;
+            }
+        
+            @include tablet {
+                font-size: 2.25em;
+                width: 29%;
+                margin: 1em 0em 1em 0.7em;
+            }
+        }
+
+
+        &__SocialSection {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin: 1em 1em 1em;
+        
+            @include mobile {
+                width: 40%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        
+            @include tablet {
+                width: 25%;
+                margin: 1.5em 1.8em 1em;
+                padding: 0em;
+                align-self: center;
+                justify-self: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        
+        
+            &__block {
+                @include tablet {
+                    width: 30%;
+                }
+            }
+        }
+        
+        &__instagram {
+            background-image: url(/assets/Icons/SVG/Icon-instagram.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1.5em;
+            height: 1.5em;
+        }
+        
+        &__facebook {
+            background-image: url(/assets/Icons/SVG/Icon-facebook.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1.5em;
+            height: 1.5em;
+            
+        }
+        
+        &__twitter {
+            background-image: url(/assets/Icons/SVG/Icon-twitter.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1.5em;
+            height: 1.5em;
+            
+        }
+    
+        &__companyLogo {
+            display: flex;
+            justify-self: self-end;
+            margin: 0em 0em 0em 8.2em;
+            padding: 0em;
         }
     }
+
+
+
+
+
 }
 
-.instagram {
-    background-image: url(/assets/Icons/SVG/Icon-instagram.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1.5em;
-    height: 1.5em;
-}
-
-.facebook {
-    background-image: url(/assets/Icons/SVG/Icon-facebook.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1.5em;
-    height: 1.5em;
-    
-}
-
-.twitter {
-    background-image: url(/assets/Icons/SVG/Icon-twitter.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1.5em;
-    height: 1.5em;
-    
-}
-
-.footerCompanyLogo {
-   width: 1em;
-   height: auto;
-   background-image: url("/Assets/Logo/Logo-bandsite\ copy.svg");
-   background-repeat: no-repeat;
-    width: 9em;
-    height: 2em;
-    justify-self: center;
-    margin-top: 16px;
-    padding: 0em;
+// .footerCompanyLogo {
+//    width: 1em;
+//    height: auto;
+// //    background-image: url("/Assets/Logo/Logo-bandsite\ copy.svg");
+// //    background-repeat: no-repeat;
+//     width: 9em;
+//     height: 2em;
+//     justify-self: center;
+//     margin-top: 16px;
+//     padding: 0em;
    
-   @include mobile {
-       display: none;
-   }
+//    @include mobile {
+//        display: none;
+//    }
 
-   @include tablet {
-        display: flex;
-        flex-direction: row;
-        width: 25%;
-        align-self: center;
-        justify-self: flex-end;
-        position: relative;
-        margin: 0em 0em 0em 0em;
-        padding: 0em 0em 0em 0em;
+//    @include tablet {
+//         display: none;
+//         flex-direction: row;
+//         width: 0em;
+//         align-self: flex-end;
+//         // justify-self: flex-end;
+//         position: relative;
+//         // background-position: 20px 0px 0px 30px;
+//         top: 20px;
+//         left: 50px;
+//         margin: 20px 0em 0em 0em;
+//         padding: 0em 0em 0em 25px;
+//         text-align: right;
        
-   }
+//    }
 
-   @include desktop {
-       display: flex;
-   }
-}
+//    @include desktop {
+//        display: flex;
+
+//    }
+// }
 
 .footerInformationSection {
     margin: 1em;
