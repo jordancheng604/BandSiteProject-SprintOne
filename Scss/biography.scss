@@ -29,6 +29,10 @@ body {
         align-items: center;
     }
 
+    @include desktop {
+        height: 4.2em;
+    }
+
 }
 
 .navbarLogo {
@@ -45,7 +49,7 @@ body {
         margin: 1em 1.5em 1em;    }
 
     @include desktop {
-        margin: 1em 1em 1em 9.5em;
+        margin: 1.5em 1em 1em 9.5em;
         width: 7em;
         height: 1.2em;
         background-size: 90%;
@@ -64,7 +68,7 @@ body {
     }
 
     @include desktop {
-        padding-bottom: 2.6em;
+        padding-bottom: 1.5em;
         width: 0.5em;
     }
 }
@@ -124,7 +128,7 @@ body {
     }
 
     @include desktop {
-        height: 35em;
+        height: 34.5em;
     }
 }
 
@@ -168,7 +172,8 @@ body {
     }
 
     @include desktop {
-        font-size: 1em;
+        font-size: 1.8em;
+        margin: 1.5em 0em 1em 4.6em;
     }
 
 }
@@ -195,8 +200,9 @@ body {
         }
 
         @include desktop {
-            width: 100%;
-            height: 20em;
+            width: 46em;
+            height: 23em;
+            margin-left: 13.3em;
         }
 
 }
@@ -212,6 +218,13 @@ body {
         width: 90%;
         margin: 1.5em 0.3em 1em;
     }
+
+    @include desktop {
+        font-size: 1.3em;
+
+        width: 60%;
+        margin-left: 10.3em;
+    }
 }
 
 .aboutArtistQuoteName {
@@ -223,6 +236,14 @@ body {
         font-size: 1em;
         margin: 1em 0.5em 1em;
     }
+
+    @include desktop {
+        font-size: 0.8em;
+
+        width: 60%;
+        margin-left: 16.8em;
+    }
+
 }
 
 .aboutParagrphTitle {
@@ -236,6 +257,13 @@ body {
         font-weight: bold;
         margin: 1.8em 0.3em 0em;
     }
+
+    @include desktop {
+        font-size: 1.3em;
+
+        width: 60%;
+        margin-left: 10.2em;
+    }
 }
 
 .aboutParagraphs {
@@ -248,6 +276,13 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         margin: 0em 0.5em 1em;
+    }
+
+    @include desktop {
+        font-size: 0.8em;
+
+        width: 80%;
+        margin-left: 16.8em;
     }
 }
 .aboutParagraphOne {
@@ -263,6 +298,11 @@ body {
         line-height: 1.5em;
     }
 
+    @include desktop {
+        line-height: 1.5em;
+
+        width: 35%;
+    }
 
 }
 
@@ -279,6 +319,12 @@ body {
         font-size: 0.9em;
         line-height: 1.5em;
         margin-left: 1.5em;
+    }
+
+    @include desktop {
+        width: 35%;
+
+        margin-left: 4.3em;
     }
 }
 
@@ -300,6 +346,14 @@ body {
         font-weight: bolder;
         margin: 1.2em 0.6em 1.5em;
     }
+
+    @include desktop {
+        width:100%;
+        font-size: 1.9em;
+
+        margin-left: 4.9em;
+    }
+
 }
 
 .photoGallery {
@@ -308,6 +362,7 @@ body {
     align-items: center;
     margin: 1em 0em 0em 0em;
     background-color: #fafafa;
+    background-size: 100%;
     width: 100%;
 
     @include mobile {
@@ -325,7 +380,11 @@ body {
     @include desktop {
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: flex-start;
         justify-content: space-evenly;
+        width: 80%;
+        padding: 0em 0em 0em 7.5em;
+        margin: 0em 0em 0em 0em;
     }
 
     &__pic {
@@ -345,7 +404,9 @@ body {
         }
 
         @include desktop {
-            width: 30%;
+            width: 18em;
+            height: 12em;
+           
         }
     }
 }
@@ -432,6 +493,13 @@ body {
             flex-direction: row;
             width: 100%;
         }
+
+        @include desktop {
+            width: 100%;
+            margin: 0em 0em 0em 7.7em;
+            display: flex;
+            flex-direction: row;
+        }
         
         &__Title {
             font-size: 1.5em;
@@ -449,6 +517,11 @@ body {
                 font-size: 2.25em;
                 width: 29%;
                 margin: 1em 0em 0.4em 0.7em;
+            }
+
+            @include desktop {
+                font-size: 2em;
+                margin-right: 0em;
             }
         }
 
@@ -475,6 +548,14 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
+            
+            }
+
+            @include desktop {
+                margin: 0.9em 0em 0em -11em;
+                display: flex;
+                flex-direction: row;
+                justify-items: center;
             }
         
         
@@ -486,11 +567,17 @@ body {
         }
         
         &__instagram {
-            background-image: url(/assets/Icons/SVG/Icon-instagram.svg);
             background-repeat: no-repeat;
             background-position: center;
             width: 1.5em;
             height: 1.5em;
+
+            @include desktop {
+                margin: 0em;
+                padding: 0em;
+                width: 1.09em;
+                height: 1.09em;
+            }
         }
         
         &__facebook {
@@ -500,6 +587,12 @@ body {
             width: 1.5em;
             height: 1.5em;
             
+            @include desktop {
+                margin: 0em;
+                padding: 0em;
+                width: 0.7em;
+                height: 1.5em;
+            }
         }
         
         &__twitter {
@@ -509,6 +602,12 @@ body {
             width: 1.5em;
             height: 1.5em;
             
+            @include desktop {
+                margin: 0em;
+                padding: 0em;
+                size: 15%;
+
+            }
         }
     
         &__companyLogo {
@@ -523,6 +622,12 @@ body {
 
             @include tablet {
                 display: flex;
+            }
+
+            @include desktop {
+                display: flex;
+                justify-self: self-end;
+                margin-left: 20em;
             }
         }
     }
@@ -557,12 +662,22 @@ body {
         line-height: 1.8em;
         margin: 0em 0em 1em 1.5em;
     }
+
+
+    @include desktop {
+        margin: 0em 0em 0em 13.2em;
+        font-size: 0.7em;
+    }
 }
 
 .__block {
     @include tablet {
         width: 32.1%;
         margin: 0em 0em 0em 0.7em;
+    }
+
+    @include desktop {
+        width: 20%;
     }
 }
 
@@ -574,6 +689,7 @@ body {
         font-size: 1.1em;
         margin: 1em 0em 0em 0em;
     }
+
 }
 
 .footerInformationSectionCompany {
@@ -618,5 +734,10 @@ body {
         margin: 1em 20em 2.5em 1.5em;
         width: 100%;
         font-size: 0.9em;
+    }
+
+    @include desktop {
+        margin-left: 13.5em;
+        font-size: 0.7em;
     }
 }
