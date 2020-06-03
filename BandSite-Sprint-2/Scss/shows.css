@@ -56,7 +56,7 @@ body {
   height: 2rem;
   -ms-grid-column-align: center;
       justify-self: center;
-  margin: 1rem 0rem 0rem 1rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
   padding: 0rem;
 }
 
@@ -89,6 +89,7 @@ body {
           flex-direction: row;
   margin: 1px;
   text-align: center;
+  font-size: 0.8rem;
 }
 
 @media (min-width: 768px) {
