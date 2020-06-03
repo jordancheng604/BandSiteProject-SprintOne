@@ -1,0 +1,458 @@
+@import 'mixins';
+@font-face {
+    font-family: "Roboto";
+    src: url(/Assets/Roboto/Roboto-Regular.ttf);
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.navbar {
+    background-color: #323232;
+    text-decoration: none;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 5em;
+    width: 100%;
+
+    @include tablet {
+        justify-content: flex-start;
+        align-items: center;
+        height: 4.5rem;
+    }
+
+    @include desktop {
+        height: 4.2em;
+    }
+
+    &__Logo {
+        background-image: url("/Assets/Logo/Logo-bandsite\ copy.svg");
+        background-repeat: no-repeat;
+        background-color: lightgreen;
+        width: 100%;
+        height: 2em;
+        justify-self: center;
+        margin: 1em 0em 0em 1em;
+        padding: 0em;
+    
+        @include tablet {
+            justify-self: flex-start;
+            margin: 1.9em 1.5em 1em;   
+         
+        }
+    
+        @include desktop {
+            margin: 1.5em 1em 1em 9.5em;
+            width: 7em;
+            height: 1.2em;
+            background-size: 90%;
+        }
+    }
+
+    &__PagesList {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        // justify-content: center;
+        margin: 1px;
+        text-align: center;
+    
+        @include tablet {
+            width: 70%;
+            display: flex;
+            align-content: center;
+            justify-content: flex-start;
+            padding-top: 3.3%;
+            margin-right: 2.5%;
+        }
+    
+        @include desktop {
+            font-size: 0.72em;
+            margin: 0em 0em 0em 0.9em;
+            width: 65%;
+            padding: 2.9em 0em 0em 0em;
+        }
+
+
+        &__Page{
+
+            width: 50%;
+
+            &--active {
+                border-bottom: 3.9px solid white;
+                color: white;
+                width: 50%;
+                font-weight: bold;
+            
+                @include tablet {
+                    padding-bottom: 3.9%;
+                    // padding-top: 3%;
+                }
+            
+                @include desktop {
+                    padding-bottom: 1.5em;
+                    width: 0.5em;
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+
+
+
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/Assets/Images/hero--aditya-chinchure-9tZhyQskezA-unsplash.jpg");
+    background-color: rgba(50, 50, 50, 0.5);
+    width: 100%;
+    height: 10rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: center;
+    align-content: center;
+    
+    @include tablet {
+        height: 22.6rem;
+    }
+
+    @include desktop {
+        height: 34.5em;
+    }
+}
+
+
+.heroArtistNames {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    margin: 1em;
+
+    @include mobile {
+        margin: 1em 0.5em 1em;
+        font-size: 1.3em;
+        width: 69%;
+    }
+
+    @include tablet {
+        font-size: 3.75em;
+        margin: 1em 0.4em 1em;        
+        width: 85%;
+    }
+
+    @include desktop {
+        margin: -1em 0em 0em 2.5em;
+        width: 45%;
+        font-size: 3.3em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #323232;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0em;
+    width: 100%;
+    line-height: 1.1em;
+
+    &__topFooter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        // width: 100%;
+        width: 100%;
+        justify-content: flex-start;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        @include desktop {
+            width: 100%;
+            margin: 0em 0em 0em 7.7em;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        &__Title {
+            font-size: 1.5em;
+            font-weight: bolder;
+            line-height: 2em;
+            margin: 1em;
+        
+            @include mobile {
+                margin: 1em 0em 0em 0.2em;
+                font-size: 2.2em;
+                width: 100%;
+            }
+        
+            @include tablet {
+                font-size: 2.25em;
+                width: 29%;
+                margin: 1em 0em 0.4em 0.7em;
+            }
+
+            @include desktop {
+                font-size: 2em;
+                margin-right: -0.3rem;
+                margin-left: 2rem;
+            }
+        }
+
+
+        &__SocialSection {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin: 1em 1em 1em;
+        
+            @include mobile {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        
+            @include tablet {
+                width: 25%;
+                margin: 1.5em 1.8em 1em;
+                padding: 0em;
+                align-self: center;
+                justify-self: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            
+            }
+
+            @include desktop {
+                margin: 0.9em 0em 0em -11em;
+                display: flex;
+                flex-direction: row;
+                justify-items: center;
+            }
+        
+        
+            &__block {
+                @include tablet {
+                    width: 30%;
+                }
+            }
+        }
+        
+        &__instagram {
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1.5em;
+            height: 1.5em;
+
+            @include desktop {
+                // margin: 0em;
+                margin-right: -3rem;
+                padding: 0em;
+                width: 1.09em;
+                height: 1.09em;
+            }
+        }
+        
+        &__facebook {
+            background-image: url(/assets/Icons/SVG/Icon-facebook.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1.5em;
+            height: 1.5em;
+            
+            @include desktop {
+                margin: 0em;
+                padding: 0em;
+                width: 0.7em;
+                height: 1.5em;
+            }
+        }
+        
+        &__twitter {
+            background-image: url(/assets/Icons/SVG/Icon-twitter.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1.5em;
+            height: 1.5em;
+            
+            @include desktop {
+                margin: 0em;
+                padding: 0em;
+                size: 15%;
+
+            }
+        }
+    
+        &__companyLogo {
+            display: flex;
+            justify-self: self-end;
+            margin: 0em 0em 0em 8.2em;
+            padding: 0em;
+
+            @include mobile {
+
+                display: none;
+            }
+
+            @include tablet {
+                display: flex;
+            }
+
+            @include desktop {
+                display: flex;
+                justify-self: self-end;
+                margin-left: 20em;
+            }
+        }
+    }
+
+
+
+
+
+}
+
+
+.footerInformationSection {
+    margin: 1em;
+    font-size: 0.8em;
+    line-height: 1.2em;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        font-size: 0.8em;
+        line-height: 1.5em;
+        margin: 0em 0em 1.5em 0.9em;
+    }
+
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        font-size: 0.8em;
+        line-height: 1.8em;
+        margin: 0em 0em 1em 1.5em;
+    }
+
+
+    @include desktop {
+        margin: 0em 0em 0em 13.2em;
+        font-size: 0.7em;
+    }
+}
+
+.__block {
+    @include tablet {
+        width: 32.1%;
+        margin: 0em 0em 0em 0.7em;
+    }
+
+    @include desktop {
+        width: 20%;
+    }
+}
+
+.footerInformationSectionName {
+    font-size: 1.2em;
+    font-weight: bold;
+
+    @include mobile {
+        font-size: 1.1em;
+        margin: 1em 0em 0em 0em;
+    }
+
+}
+
+.footerInformationSectionCompany {
+    font-size: 1.2em;
+    font-weight: bold;
+
+    @include mobile {
+        font-size: 1.1em;
+    }
+
+   
+}
+
+.footerInformationSectionCompanyAddress {
+
+    @include mobile {
+        width: 50%;
+        margin: 1em 0em 1em;
+        font-size: 0.98em;
+    }
+
+    @include tablet {
+        width: 70%;
+        margin: 1em 0em 1em;
+        font-size: 1.1em;
+        line-height: 1.4em;
+    }
+}
+
+.footerCopyright {
+    margin: 1em;
+
+    @include mobile {
+        font-size: 0.8em;
+        width: 65%;
+        margin: 0em 0.9em 2em;
+    }
+
+    @include tablet {
+        justify-self: flex-end;
+        align-self: start;
+        margin: 1em 20em 2.5em 1.5em;
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    @include desktop {
+        margin-top: 1.5rem;
+        margin-left: 9.7rem;
+        font-size: 0.7em;
+    }
+}
