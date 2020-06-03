@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }
 
@@ -21,7 +21,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    height: 5em;
+    height: 5rem;
     width: 100%;
 
     @include tablet {
@@ -31,29 +31,29 @@ body {
     }
 
     @include desktop {
-        height: 4.2em;
+        height: 4.2rem;
     }
 
     &__Logo {
         background-image: url("/Assets/Logo/Logo-bandsite\ copy.svg");
         background-repeat: no-repeat;
-        background-color: lightgreen;
+        background-position: center;       
         width: 100%;
-        height: 2em;
+        height: 2rem;
         justify-self: center;
-        margin: 1em 0em 0em 1em;
-        padding: 0em;
+        margin: 1rem 0rem 0rem 1rem;
+        padding: 0rem;
     
         @include tablet {
             justify-self: flex-start;
-            margin: 1.9em 1.5em 1em;   
+            margin: 1.9rem 1.5rem 1rem;   
          
         }
     
         @include desktop {
-            margin: 1.5em 1em 1em 9.5em;
-            width: 7em;
-            height: 1.2em;
+            margin: 1.5rem 1rem 1rem 9.5rem;
+            width: 7rem;
+            height: 1.2rem;
             background-size: 90%;
         }
     }
@@ -78,9 +78,9 @@ body {
     
         @include desktop {
             font-size: 0.72em;
-            margin: 0em 0em 0em 0.9em;
+            margin: 0rem 0rem 0rem 0.9rem;
             width: 65%;
-            padding: 2.9em 0em 0em 0em;
+            padding: 2.9rem 0rem 0rem 0rem;
         }
 
 
@@ -100,8 +100,8 @@ body {
                 }
             
                 @include desktop {
-                    padding-bottom: 1.5em;
-                    width: 0.5em;
+                    padding-bottom: 1.5rem;
+                    width: 0.5rem;
                 }
             }
         }
@@ -135,33 +135,33 @@ body {
     }
 
     @include desktop {
-        height: 34.5em;
+        height: 34.5rem;
     }
 }
 
 
 .heroArtistNames {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     font-weight: bold;
     color: white;
-    margin: 1em;
+    margin: 1rem;
 
     @include mobile {
-        margin: 1em 0.5em 1em;
-        font-size: 1.3em;
+        margin: 1rem 0.5rem 1rem;
+        font-size: 1.3rem;
         width: 69%;
     }
 
     @include tablet {
-        font-size: 3.75em;
-        margin: 1em 0.4em 1em;        
+        font-size: 3.75rem;
+        margin: 1rem 0.4rem 1rem;        
         width: 85%;
     }
 
     @include desktop {
-        margin: -1em 0em 0em 2.5em;
+        margin: -1rem 0rem 0rem 2.5rem;
         width: 45%;
-        font-size: 3.3em;
+        font-size: 3.3rem;
     }
 }
 
@@ -181,9 +181,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0em;
+    margin: 0rem;
     width: 100%;
-    line-height: 1.1em;
+    line-height: 1.1rem;
 
     &__topFooter {
         display: flex;
@@ -207,31 +207,31 @@ body {
 
         @include desktop {
             width: 100%;
-            margin: 0em 0em 0em 7.7em;
+            margin: 0rem 0rem 0rem 7.7rem;
             display: flex;
             flex-direction: row;
         }
         
         &__Title {
-            font-size: 1.5em;
+            font-size: 1.5rem;
             font-weight: bolder;
-            line-height: 2em;
-            margin: 1em;
+            line-height: 2rem;
+            margin: 1rem;
         
             @include mobile {
-                margin: 1em 0em 0em 0.2em;
-                font-size: 2.2em;
+                margin: 1rem 0rem 0rem 0.2rem;
+                font-size: 2.2rem;
                 width: 100%;
             }
         
             @include tablet {
-                font-size: 2.25em;
+                font-size: 2.25rem;
                 width: 29%;
-                margin: 1em 0em 0.4em 0.7em;
+                margin: 1rem 0rem 0.4rem 0.7rem;
             }
 
             @include desktop {
-                font-size: 2em;
+                font-size: 2rem;
                 margin-right: -0.3rem;
                 margin-left: 2rem;
             }
@@ -242,7 +242,7 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
-            margin: 1em 1em 1em;
+            margin: 1rem 1rem 1rem;
         
             @include mobile {
                 width: 50%;
@@ -253,8 +253,8 @@ body {
         
             @include tablet {
                 width: 25%;
-                margin: 1.5em 1.8em 1em;
-                padding: 0em;
+                margin: 1.5rem 1.8rem 1rem;
+                padding: 0rem;
                 align-self: center;
                 justify-self: center;
                 display: flex;
@@ -264,7 +264,7 @@ body {
             }
 
             @include desktop {
-                margin: 0.9em 0em 0em -11em;
+                margin: 0.9rem 0rem 0rem -11rem;
                 display: flex;
                 flex-direction: row;
                 justify-items: center;
@@ -281,15 +281,15 @@ body {
         &__instagram {
             background-repeat: no-repeat;
             background-position: center;
-            width: 1.5em;
-            height: 1.5em;
+            width: 1.5rem;
+            height: 1.5rem;
 
             @include desktop {
-                // margin: 0em;
+                // margin: 0rem;
                 margin-right: -3rem;
-                padding: 0em;
-                width: 1.09em;
-                height: 1.09em;
+                padding: 0rem;
+                width: 1.09rem;
+                height: 1.09rem;
             }
         }
         
@@ -297,14 +297,14 @@ body {
             background-image: url(/assets/Icons/SVG/Icon-facebook.svg);
             background-repeat: no-repeat;
             background-position: center;
-            width: 1.5em;
-            height: 1.5em;
+            width: 1.5rem;
+            height: 1.5rem;
             
             @include desktop {
-                margin: 0em;
-                padding: 0em;
-                width: 0.7em;
-                height: 1.5em;
+                margin: 0rem;
+                padding: 0rem;
+                width: 0.7rem;
+                height: 1.5rem;
             }
         }
         
@@ -312,12 +312,12 @@ body {
             background-image: url(/assets/Icons/SVG/Icon-twitter.svg);
             background-repeat: no-repeat;
             background-position: center;
-            width: 1.5em;
-            height: 1.5em;
+            width: 1.5rem;
+            height: 1.5rem;
             
             @include desktop {
-                margin: 0em;
-                padding: 0em;
+                margin: 0rem;
+                padding: 0rem;
                 size: 15%;
 
             }
@@ -326,8 +326,8 @@ body {
         &__companyLogo {
             display: flex;
             justify-self: self-end;
-            margin: 0em 0em 0em 8.2em;
-            padding: 0em;
+            margin: 0rem 0rem 0rem 8.2rem;
+            padding: 0rem;
 
             @include mobile {
 
@@ -341,7 +341,7 @@ body {
             @include desktop {
                 display: flex;
                 justify-self: self-end;
-                margin-left: 20em;
+                margin-left: 20rem;
             }
         }
     }
@@ -354,17 +354,17 @@ body {
 
 
 .footerInformationSection {
-    margin: 1em;
-    font-size: 0.8em;
-    line-height: 1.2em;
+    margin: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
 
     @include mobile {
         display: flex;
         flex-direction: column;
         align-content: flex-start;
-        font-size: 0.8em;
-        line-height: 1.5em;
-        margin: 0em 0em 1.5em 0.9em;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        margin: 0rem 0rem 1.5rem 0.9rem;
     }
 
     @include tablet {
@@ -372,22 +372,22 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         align-content: flex-start;
-        font-size: 0.8em;
-        line-height: 1.8em;
-        margin: 0em 0em 1em 1.5em;
+        font-size: 0.8rem;
+        line-height: 1.8rem;
+        margin: 0rem 0rem 1rem 1.5rem;
     }
 
 
     @include desktop {
-        margin: 0em 0em 0em 13.2em;
-        font-size: 0.7em;
+        margin: 0rem 0rem 0rem 13.2rem;
+        font-size: 0.7rem;
     }
 }
 
 .__block {
     @include tablet {
         width: 32.1%;
-        margin: 0em 0em 0em 0.7em;
+        margin: 0rem 0rem 0rem 0.7rem;
     }
 
     @include desktop {
@@ -396,22 +396,22 @@ body {
 }
 
 .footerInformationSectionName {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: bold;
 
     @include mobile {
-        font-size: 1.1em;
-        margin: 1em 0em 0em 0em;
+        font-size: 1.1rem;
+        margin: 1rem 0rem 0rem 0rem;
     }
 
 }
 
 .footerInformationSectionCompany {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: bold;
 
     @include mobile {
-        font-size: 1.1em;
+        font-size: 1.1rem;
     }
 
    
@@ -421,38 +421,38 @@ body {
 
     @include mobile {
         width: 50%;
-        margin: 1em 0em 1em;
-        font-size: 0.98em;
+        margin: 1rem 0rem 1rem;
+        font-size: 0.98rem;
     }
 
     @include tablet {
         width: 70%;
-        margin: 1em 0em 1em;
-        font-size: 1.1em;
-        line-height: 1.4em;
+        margin: 1rem 0rem 1rem;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
     }
 }
 
 .footerCopyright {
-    margin: 1em;
+    margin: 1rem;
 
     @include mobile {
-        font-size: 0.8em;
+        font-size: 0.8rem;
         width: 65%;
-        margin: 0em 0.9em 2em;
+        margin: 0rem 0.9rem 2rem;
     }
 
     @include tablet {
         justify-self: flex-end;
         align-self: start;
-        margin: 1em 20em 2.5em 1.5em;
+        margin: 1rem 20rem 2.5rem 1.5rem;
         width: 100%;
-        font-size: 0.9em;
+        font-size: 0.9rem;
     }
 
     @include desktop {
         margin-top: 1.5rem;
         margin-left: 9.7rem;
-        font-size: 0.7em;
+        font-size: 0.7rem;
     }
 }
