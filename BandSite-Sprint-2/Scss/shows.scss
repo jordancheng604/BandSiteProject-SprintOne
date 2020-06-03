@@ -121,13 +121,13 @@ body {
 .hero {
     display: flex;
     flex-direction: column;
-    background-image: url("/Assets/Images/hero--aditya-chinchure-9tZhyQskezA-unsplash.jpg");
+    background-image: url("/Assets/Images/austin-edwards-QcO0TNNoqig-unsplash.jpg");
     background-color: rgba(50, 50, 50, 0.5);
     width: 100%;
-    height: 10rem;
+    height: 29rem;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 220%;
     justify-content: center;
     align-content: center;
     
@@ -138,33 +138,74 @@ body {
     @include desktop {
         height: 34.5rem;
     }
+
+    &__TextOne {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: white;
+        margin: 1rem;
+    
+        @include mobile {
+            margin: 1.3rem 0.5rem 0.8rem;
+            font-size: 0.8rem;
+            width: 69%;
+            line-height: 1.8rem;
+            
+        }
+    
+        @include tablet {
+            font-size: 3.75rem;
+            margin: 1rem 0.4rem 1rem;        
+            width: 85%;
+        }
+    
+        @include desktop {
+            margin: -1rem 0rem 0rem 2.5rem;
+            width: 45%;
+            font-size: 3.3rem;
+        }
+    }
+
+    &__TextTwo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: white;
+        margin: 1rem;
+    
+        @include mobile {
+            margin: 0rem 0.5rem 1rem;
+            font-size: 2.2rem;
+            width: 89%;
+            line-height: 3rem;
+        }
+    
+        @include tablet {
+            font-size: 3.75rem;
+            margin: 1rem 0.4rem 1rem;        
+            width: 85%;
+        }
+    
+        @include desktop {
+            margin: -1rem 0rem 0rem 2.5rem;
+            width: 45%;
+            font-size: 3.3rem;
+        }
+    }
+
+    &__song {
+        width: 90%;
+        // height: 0.5rem;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        
+        
+    }
+
 }
 
 
-.heroArtistNames {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: white;
-    margin: 1rem;
 
-    @include mobile {
-        margin: 1rem 0.5rem 1rem;
-        font-size: 1.3rem;
-        width: 69%;
-    }
-
-    @include tablet {
-        font-size: 3.75rem;
-        margin: 1rem 0.4rem 1rem;        
-        width: 85%;
-    }
-
-    @include desktop {
-        margin: -1rem 0rem 0rem 2.5rem;
-        width: 45%;
-        font-size: 3.3rem;
-    }
-}
 
 
 
