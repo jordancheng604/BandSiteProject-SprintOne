@@ -41,17 +41,36 @@ for(let i=0;i<showarr1.length;i++){
     parent.appendChild(showCard);
     document.querySelectorAll(".show__date2")[i].innerHTML = showarr1[i].Date
 
-    let showCard2 = document.createElement('p');
-    showCard.appendChild(showCard2);
-    document.querySelectorAll('p')[i].innerHTML = showarr1[i].Venue
+    let dateHeader = document.createElement('div');
+    dateHeader.classList.add("show__dateH--mobile");
+    parent.appendChild(dateHeader);
+    document.querySelectorAll(".show__dateH--mobile")[i].innerHTML  = ('DATES');
 
-    let showCard3 = document.createElement('article');
+    let venueHeader = document.createElement('div');
+    venueHeader.classList.add("show__venueH--mobile");
+    parent.appendChild(venueHeader);
+    document.querySelectorAll(".show__venueH--mobile")[i].innerHTML  = ('VEUE');
+
+    
+
+    let showCard2 = document.createElement('div');
+    showCard2.classList.add("show__venue2");
+    showCard.appendChild(showCard2);
+    document.querySelectorAll('.show__venue2')[i].innerHTML = showarr1[i].Venue
+
+    let locationHeader = document.createElement('div');
+    locationHeader.classList.add("show__locationH--mobile");
+    parent.appendChild(locationHeader);
+    document.querySelectorAll(".show__locationH--mobile")[i].innerHTML  = ('LOCATION');
+
+    let showCard3 = document.createElement('div');
+    showCard3.classList.add("show__location2");
     showCard.appendChild(showCard3);
-    document.querySelectorAll('article')[i].innerHTML = showarr1[i].Location
+    document.querySelectorAll('.show__location2')[i].innerHTML = showarr1[i].Location
 
     let showCard9 = document.createElement('button');
     showCard.appendChild(showCard9);
-    document.querySelectorAll('button')[i].innerHTML = showarr1[i]
+    document.querySelectorAll('button')[i].innerHTML = ("Buy Tickets")
 }
 
 
