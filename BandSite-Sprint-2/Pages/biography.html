@@ -15,7 +15,7 @@
 
        <div class="navbarPagesList">
             <div class="navbarPagesListPage --active">Biography</div>
-            <div class="navbarPagesListPage">Shows</div> 
+            <a href="/Pages/shows.html" class="navbarPagesListPage">Shows</a> 
 
        </div>
 
@@ -89,35 +89,31 @@
     </div>
 
     <div class="comments">
-        <div class="comments__title">
+        <h3 class="comments__title">
             Join the Conversation
-        </div>
+        </h3>
 
-        <div class="comments__section">
-            <div class="comments__section__photo">
-                Photo goes here.
-            </div>
-
-            <div class="comments__section__name">
-                Name input here
-            </div>
-
-            <div class="comments__section__comment">
-                Comment goes here.
-            </div>
-
-            <div class="comments__section__button">
-                "Comment" button here.
-            </div>
-
-        </div>
-
-        <div class="comments__section__postedComment">
-            Old comment here.
-        </div>
 
 
     </div>
+
+    <form action="" id="commentForm">
+        <img src="/Assets/Images/Mohan-muruge.jpg" id="mohan">
+
+        <div id="name">Name</div>
+        <input type="text" name="nameInput" id="nameInput">
+        <div id="commentText">Comment</div>
+        <textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
+
+        <button id="commentButton">COMMENT</button>
+        
+        <div class="listContainer">
+        <ul id="commentList">
+
+        </ul>
+        </div>
+
+    </form>
 
 
 
