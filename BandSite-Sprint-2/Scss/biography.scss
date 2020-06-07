@@ -560,6 +560,10 @@ body {
     flex-direction: row;
     margin: 0.3rem 0.5rem 0rem;
 
+    @include tablet {
+        margin: 0rem;;
+    }
+
 }
 
 #mohan{
@@ -598,7 +602,7 @@ body {
 
     border: 2px solid black;
     border-radius: 5px;
-    margin:0rem 0.7rem  1rem;
+    margin:0rem 0.5rem  1rem;
     // padding: 3rem;
 
     align-self: flex-end;
@@ -632,8 +636,8 @@ body {
     border-radius: 5px;
 
     @include tablet{
-        width: 27.6rem;
-        margin-right: 0.7rem;
+        width: 27.5rem;
+        margin-right: 0.5rem;
     }
 }
 

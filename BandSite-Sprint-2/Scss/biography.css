@@ -735,6 +735,12 @@ body {
   margin: 0.3rem 0.5rem 0rem;
 }
 
+@media (min-width: 768px) {
+  #goINaLINE {
+    margin: 0rem;
+  }
+}
+
 #mohan {
   width: 3.1rem;
   height: 3.1rem;
@@ -771,7 +777,7 @@ body {
     height: 2.5rem;
     border: 2px solid black;
     border-radius: 5px;
-    margin: 0rem 0.7rem  1rem;
+    margin: 0rem 0.5rem  1rem;
     -ms-flex-item-align: end;
         align-self: flex-end;
     margin-left: 1rem;
@@ -805,8 +811,8 @@ body {
 
 @media (min-width: 768px) {
   #textArea1 {
-    width: 27.6rem;
-    margin-right: 0.7rem;
+    width: 27.5rem;
+    margin-right: 0.5rem;
   }
 }
 
