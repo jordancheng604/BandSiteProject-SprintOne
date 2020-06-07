@@ -558,7 +558,8 @@ body {
 #goINaLINE{
     display: flex;
     flex-direction: row;
-    margin: 0.3rem 0rem 0rem;
+    margin: 0.3rem 0.5rem 0rem;
+
 }
 
 #mohan{
@@ -566,7 +567,7 @@ body {
     height: 3.1rem;
     border-radius: 55%;
     // margin-bottom: 99%;
-    margin: 0% 0% 0%;
+    margin: 0% 0.3% 0%;
     // display: inline;
 }
 
@@ -576,8 +577,9 @@ body {
     font-weight: bolder;
     align-self: flex-end;
 
-    width: 87%;
+    width: 77%;
     text-align: left;
+    // margin-left: 0.9rem;
 
     @include tablet {
         width: 87%;
@@ -585,7 +587,11 @@ body {
 }
 
 #nameInput{
-    
+    width: 13.5rem;
+    margin-left: 0.9rem;
+    border: 1.5px solid black;
+    border-radius: 5px;
+
     @include tablet {
     width: 27.5rem;
     height: 2.5rem;
@@ -603,11 +609,12 @@ body {
 
 #commentBoxTitle{
     color: gray;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: bolder;
     align-self: flex-end;
 
-    width: 75%;
+    width: 77%;
+    margin: 1.2rem 0rem 0rem;
     text-align: left;
     // margin-bottom: 0.5%;
 
@@ -619,9 +626,9 @@ body {
 
 
 #textArea1{
-    width: 70%;
+    width: 13.59rem;
     align-self: flex-end;
-    margin: 0.3rem 0.5rem 0.8rem;
+    margin: 0.3rem 1.35rem 0.8rem;
     border-radius: 5px;
 
     @include tablet{
@@ -641,8 +648,8 @@ body {
 }
 
 #commentButton{
-    width: 72%;
-    margin-right: 0.5rem;
+    width: 13.95rem;
+    margin-right: 1.3rem;
     margin-bottom: 3rem;
     align-self: flex-end;
     color: white;
