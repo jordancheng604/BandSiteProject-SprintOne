@@ -59,11 +59,11 @@ body {
     }
 }
 
-.--active {
+div.navbarPagesListPage--active {
     border-bottom: 3.9px solid white;
     color: white;
     width: 50%;
-    font-weight: bold;
+    font-weight: bolder;
 
     @include tablet {
         padding-bottom: 3.9%;
@@ -514,6 +514,11 @@ body {
             margin: 0rem 0.7rem 0rem;
             font-size: 2.3rem;
         }
+
+        @include desktop {
+            margin: 2rem 8.5rem 2rem;
+            font-size: 1.98rem;
+        }
     }
 
 }
@@ -522,7 +527,7 @@ body {
 #commentForm{
     width: 100%;
     height: auto;
-    border: 5px solid greenyellow;
+    border: 1px solid greenyellow;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -533,6 +538,12 @@ body {
         align-content: center;
         width: 68%;
     }
+
+    @include desktop {
+        align-content: center;
+        width: 50%;
+        margin: 2rem 1rem 2rem 17rem;
+    }
 }
 
 #newComment{
@@ -542,12 +553,19 @@ body {
     
 
     border-bottom: 1px solid gray;
-    width: 100%;
+    width: 85%;
     margin-left: 0rem;
+    align-self: center;
 
     @include tablet{
         // border:3px dotted yellow;
         margin-left: 15rem;
+        width: 100%;
+    }
+
+    @include desktop {
+        margin-left: 5.6rem;
+        width: 75%;
     }
 }
 
@@ -558,10 +576,14 @@ body {
 #goINaLINE{
     display: flex;
     flex-direction: row;
-    margin: 0.3rem 0.5rem 0rem;
+    margin: 0.3rem 0rem 0rem;
 
     @include tablet {
-        margin: 0rem;;
+        margin: 0rem;
+    }
+
+    @include desktop {
+        margin-left: 0rem;
     }
 
 }
@@ -571,8 +593,13 @@ body {
     height: 3.1rem;
     border-radius: 55%;
     // margin-bottom: 99%;
-    margin: 0% 0.3% 0%;
+    margin: 0% 0% 0%;
     // display: inline;
+
+    @include desktop {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
 
 #name{
@@ -581,12 +608,17 @@ body {
     font-weight: bolder;
     align-self: flex-end;
 
-    width: 77%;
+    width: 89.5%;
     text-align: left;
     // margin-left: 0.9rem;
 
     @include tablet {
         width: 87%;
+    }
+
+    @include desktop {
+        width: 93.9%;
+        margin-left: 3.5rem;
     }
 }
 
@@ -609,6 +641,12 @@ body {
     margin-left: 1rem;
     // display: inline;
     }
+
+    @include desktop {
+        width: 23.9rem;
+        height: 2rem;
+        margin-left: 0.8rem;
+    }
 }
 
 #commentBoxTitle{
@@ -617,8 +655,8 @@ body {
     font-weight: bolder;
     align-self: flex-end;
 
-    width: 77%;
-    margin: 1.2rem 0rem 0rem;
+    width: 90%;
+    margin: 1.2rem 0rem 0rem 4rem;
     text-align: left;
     // margin-bottom: 0.5%;
 
@@ -626,6 +664,10 @@ body {
         width: 87%;
     }
 
+    @include desktop {
+        width: 93.8%;
+        margin-left: 0rem;
+    }
 }
 
 
@@ -638,6 +680,12 @@ body {
     @include tablet{
         width: 27.5rem;
         margin-right: 0.5rem;
+    }
+
+    @include desktop {
+        margin-left: 0rem;
+        margin-right: 2.1rem;
+        width: 23.8rem;
     }
 }
 
@@ -668,6 +716,12 @@ body {
         width: 9.9rem;
         margin-right: 0.7rem;
         font-size: 0.9rem;
+    }
+
+    @include desktop {
+        width: 8.5rem;
+        height: 2.8rem;
+        margin-right: 2.1rem;
     }
 }
 

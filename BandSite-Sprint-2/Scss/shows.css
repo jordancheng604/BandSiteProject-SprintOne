@@ -95,6 +95,7 @@ body {
   margin: 1px;
   text-align: center;
   font-size: 0.8rem;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -126,21 +127,27 @@ body {
   width: 50%;
 }
 
-.navbar--active {
+.navbar__page {
+  text-decoration: none;
+  color: gray;
+}
+
+a.navbar__page--active {
   border-bottom: 3.9px solid white;
   color: white;
   width: 50%;
   font-weight: bold;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
-  .navbar--active {
+  a.navbar__page--active {
     padding-bottom: 3.9%;
   }
 }
 
 @media (min-width: 1200px) {
-  .navbar--active {
+  a.navbar__page--active {
     padding-bottom: 1.5rem;
     width: 0.5rem;
   }
@@ -157,10 +164,10 @@ body {
   background-image: url("/Assets/Images/austin-edwards-QcO0TNNoqig-unsplash.jpg");
   background-color: rgba(50, 50, 50, 0.5);
   width: 100%;
-  height: 29rem;
+  height: 29.9rem;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 220%;
+  background-size: 225%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -189,7 +196,7 @@ body {
 
 @media (min-width: 320px) {
   .hero__TextOne {
-    margin: 1.3rem 0.5rem 0.8rem;
+    margin: 3.8rem 0.5rem 0.5rem;
     font-size: 0.8rem;
     width: 69%;
     line-height: 1.8rem;
@@ -206,7 +213,7 @@ body {
 
 @media (min-width: 1200px) {
   .hero__TextOne {
-    margin: -1rem 0rem 0rem 2.5rem;
+    margin: -1rem 0rem 1rem 2.5rem;
     width: 45%;
     font-size: 3.3rem;
   }
@@ -225,6 +232,7 @@ body {
     font-size: 2.2rem;
     width: 89%;
     line-height: 3rem;
+    font-weight: bold;
   }
 }
 
@@ -245,6 +253,7 @@ body {
 }
 
 .hero__song {
+  margin-top: 2.8rem;
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,11 +266,11 @@ body {
 .show {
   width: 100%;
   min-height: 20rem;
-  max-height: 30rem;
   height: auto;
-  color: lightskyblue;
-  margin: 5rem;
-  padding: 2rem;
+  color: black;
+  font-weight: bolder;
+  margin: 1rem 0rem 1rem 1rem;
+  padding: 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,20 +281,18 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 .show__title {
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
 .show__container {
   width: 70%;
   height: 8rem;
   min-height: 59rem;
-  background-color: lightseagreen;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,7 +305,7 @@ body {
           justify-content: space-evenly;
   font-size: 1.5rem;
   font-weight: bolder;
-  color: lightpink;
+  color: black;
 }
 
 @media (min-width: 320px) {
@@ -312,9 +319,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -329,22 +333,35 @@ body {
 }
 
 .show__date2 {
-  width: 70%;
-  height: 3rem;
+  width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 3px solid skyblue;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+  margin: 0.8rem 0rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+.show__venue2 {
+  font-size: 0.9rem;
+}
+
+.show__location2 {
+  font-size: 0.9rem;
 }
 
 .show__dateH--mobile {
@@ -354,6 +371,9 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 15%;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  color: gray;
 }
 
 .show__venueH--mobile {
@@ -361,12 +381,36 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   width: 15%;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  color: gray;
 }
 
 .show__locationH--mobile {
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: 15%;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  color: gray;
+}
+
+.buyTixButton {
+  background-color: #323232;
+  color: white;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 13.5rem;
+}
+
+@media (min-width: 320px) {
+  .buyTixButton {
+    width: 100%;
+    margin: 1rem 0rem 1rem;
+  }
 }
 
 .footer {

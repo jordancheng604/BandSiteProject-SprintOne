@@ -75,21 +75,21 @@ body {
   }
 }
 
-.--active {
+div.navbarPagesListPage--active {
   border-bottom: 3.9px solid white;
   color: white;
   width: 50%;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 @media (min-width: 768px) {
-  .--active {
+  div.navbarPagesListPage--active {
     padding-bottom: 3.9%;
   }
 }
 
 @media (min-width: 1200px) {
-  .--active {
+  div.navbarPagesListPage--active {
     padding-bottom: 1.5em;
     width: 0.5em;
   }
@@ -667,10 +667,17 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .comments__title {
+    margin: 2rem 8.5rem 2rem;
+    font-size: 1.98rem;
+  }
+}
+
 #commentForm {
   width: 100%;
   height: auto;
-  border: 5px solid greenyellow;
+  border: 1px solid greenyellow;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -697,6 +704,15 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  #commentForm {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 50%;
+    margin: 2rem 1rem 2rem 17rem;
+  }
+}
+
 #newComment {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,13 +724,23 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-bottom: 1px solid gray;
-  width: 100%;
+  width: 85%;
   margin-left: 0rem;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 @media (min-width: 768px) {
   #newComment {
     margin-left: 15rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #newComment {
+    margin-left: 5.6rem;
+    width: 75%;
   }
 }
 
@@ -732,7 +758,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 0.3rem 0.5rem 0rem;
+  margin: 0.3rem 0rem 0rem;
 }
 
 @media (min-width: 768px) {
@@ -741,11 +767,24 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  #goINaLINE {
+    margin-left: 0rem;
+  }
+}
+
 #mohan {
   width: 3.1rem;
   height: 3.1rem;
   border-radius: 55%;
-  margin: 0% 0.3% 0%;
+  margin: 0% 0% 0%;
+}
+
+@media (min-width: 1200px) {
+  #mohan {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 #name {
@@ -754,13 +793,20 @@ body {
   font-weight: bolder;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  width: 77%;
+  width: 89.5%;
   text-align: left;
 }
 
 @media (min-width: 768px) {
   #name {
     width: 87%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #name {
+    width: 93.9%;
+    margin-left: 3.5rem;
   }
 }
 
@@ -784,20 +830,35 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  #nameInput {
+    width: 23.9rem;
+    height: 2rem;
+    margin-left: 0.8rem;
+  }
+}
+
 #commentBoxTitle {
   color: gray;
   font-size: 0.7rem;
   font-weight: bolder;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  width: 77%;
-  margin: 1.2rem 0rem 0rem;
+  width: 90%;
+  margin: 1.2rem 0rem 0rem 4rem;
   text-align: left;
 }
 
 @media (min-width: 768px) {
   #commentBoxTitle {
     width: 87%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #commentBoxTitle {
+    width: 93.8%;
+    margin-left: 0rem;
   }
 }
 
@@ -813,6 +874,14 @@ body {
   #textArea1 {
     width: 27.5rem;
     margin-right: 0.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #textArea1 {
+    margin-left: 0rem;
+    margin-right: 2.1rem;
+    width: 23.8rem;
   }
 }
 
@@ -875,6 +944,14 @@ body {
     width: 9.9rem;
     margin-right: 0.7rem;
     font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #commentButton {
+    width: 8.5rem;
+    height: 2.8rem;
+    margin-right: 2.1rem;
   }
 }
 
