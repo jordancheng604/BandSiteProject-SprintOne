@@ -289,20 +289,43 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 15rem 1rem 15rem;
   font-size: 1.5rem;
   font-weight: bolder;
   color: lightpink;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+}
+
+@media (min-width: 320px) {
+  .show__container {
+    width: 90%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 768px) {
+  .show__container {
+    width: 85%;
+    height: auto;
+  }
 }
 
 .show__date2 {
@@ -324,18 +347,26 @@ body {
   border-bottom: 3px solid skyblue;
 }
 
-.show__--mobile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  border: 3px dashed royalblue;
+.show__dateH--mobile {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-top: 3rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 15%;
+}
+
+.show__venueH--mobile {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 15%;
+}
+
+.show__locationH--mobile {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 15%;
 }
 
 .footer {

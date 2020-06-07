@@ -33,24 +33,33 @@ const showarr1 = [
     },
 ]
 
+
+//Creating the table and applying inputs from the array above.
+
 let parent = document.querySelector(".show__container");
 
 for(let i=0;i<showarr1.length;i++){
-    let showCard = document.createElement('div');
-    showCard.classList.add("show__date2");
-    parent.appendChild(showCard);
-    document.querySelectorAll(".show__date2")[i].innerHTML = showarr1[i].Date
-
-    let dateHeader = document.createElement('div');
+    let dateHeader = document.createElement('span');
     dateHeader.classList.add("show__dateH--mobile");
     parent.appendChild(dateHeader);
     document.querySelectorAll(".show__dateH--mobile")[i].innerHTML  = ('DATES');
 
-    let venueHeader = document.createElement('div');
+    let venueHeader = document.createElement('span');
     venueHeader.classList.add("show__venueH--mobile");
     parent.appendChild(venueHeader);
     document.querySelectorAll(".show__venueH--mobile")[i].innerHTML  = ('VEUE');
 
+    let locationHeader = document.createElement('span');
+    locationHeader.classList.add("show__locationH--mobile");
+    parent.appendChild(locationHeader);
+    document.querySelectorAll(".show__locationH--mobile")[i].innerHTML  = ('LOCATION');
+    
+    let showCard = document.createElement('span');
+    showCard.classList.add("show__date2");
+    parent.appendChild(showCard);
+    document.querySelectorAll(".show__date2")[i].innerHTML = showarr1[i].Date
+
+   
     
 
     let showCard2 = document.createElement('div');
@@ -58,10 +67,7 @@ for(let i=0;i<showarr1.length;i++){
     showCard.appendChild(showCard2);
     document.querySelectorAll('.show__venue2')[i].innerHTML = showarr1[i].Venue
 
-    let locationHeader = document.createElement('div');
-    locationHeader.classList.add("show__locationH--mobile");
-    parent.appendChild(locationHeader);
-    document.querySelectorAll(".show__locationH--mobile")[i].innerHTML  = ('LOCATION');
+  
 
     let showCard3 = document.createElement('div');
     showCard3.classList.add("show__location2");
