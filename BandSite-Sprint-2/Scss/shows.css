@@ -40,10 +40,8 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 4.5rem;
+    height: 4.9rem;
+    width: 100%;
   }
 }
 
@@ -68,7 +66,8 @@ body {
 @media (min-width: 768px) {
   .navbar__Logo {
     justify-self: flex-start;
-    margin: 1.9rem 1.5rem 1rem;
+    margin: 1.5rem 1rem 0rem 0rem;
+    width: 22%;
   }
 }
 
@@ -100,17 +99,15 @@ body {
 
 @media (min-width: 768px) {
   .navbar__pages-list {
-    width: 70%;
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-top: 3.3%;
-    margin-right: 2.5%;
+    padding-top: 0%;
+    margin: 2.1rem 0rem 0rem 0rem;
   }
 }
 
@@ -125,6 +122,12 @@ body {
 
 .navbar__page {
   width: 50%;
+}
+
+@media (min-width: 768px) {
+  .navbar__page {
+    width: 25%;
+  }
 }
 
 .navbar__page {
@@ -143,6 +146,8 @@ a.navbar__page--active {
 @media (min-width: 768px) {
   a.navbar__page--active {
     padding-bottom: 3.9%;
+    width: 20%;
+    margin-left: 2.8rem;
   }
 }
 
@@ -177,7 +182,7 @@ a.navbar__page--active {
 
 @media (min-width: 768px) {
   .hero {
-    height: 22.6rem;
+    height: 41.6rem;
   }
 }
 
@@ -205,9 +210,10 @@ a.navbar__page--active {
 
 @media (min-width: 768px) {
   .hero__TextOne {
-    font-size: 3.75rem;
-    margin: 1rem 0.4rem 1rem;
+    font-size: 1.5rem;
+    margin: 5rem 1.5rem 1rem;
     width: 85%;
+    font-weight: bolder;
   }
 }
 
@@ -238,9 +244,11 @@ a.navbar__page--active {
 
 @media (min-width: 768px) {
   .hero__TextTwo {
-    font-size: 3.75rem;
-    margin: 1rem 0.4rem 1rem;
-    width: 85%;
+    font-size: 3.55rem;
+    font-weight: bolder;
+    margin: 1rem 1.5rem 1rem;
+    width: 69%;
+    line-height: 5rem;
   }
 }
 
@@ -261,6 +269,18 @@ a.navbar__page--active {
   justify-self: center;
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+@media (min-width: 768px) {
+  .hero__song {
+    width: 55%;
+    height: 15rem;
+    justify-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 2rem 0rem 0rem 1.7rem;
+    padding: 0rem;
+  }
 }
 
 .show {
@@ -285,8 +305,8 @@ a.navbar__page--active {
 
 .show__title {
   font-weight: bolder;
-  font-size: 3rem;
-  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 2.0rem;
 }
 
 .show__container {
@@ -327,8 +347,17 @@ a.navbar__page--active {
 
 @media (min-width: 768px) {
   .show__container {
-    width: 85%;
+    width: 90%;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -352,16 +381,20 @@ a.navbar__page--active {
           align-items: flex-start;
   text-align: left;
   margin: 0.8rem 0rem 0.8rem;
-  font-size: 0.9rem;
+  font-size: 0.98rem;
   font-weight: bolder;
 }
 
 .show__venue2 {
-  font-size: 0.9rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+  margin-bottom: 0.8rem;
 }
 
 .show__location2 {
-  font-size: 0.9rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+  margin-bottom: 0.8rem;
 }
 
 .show__dateH--mobile {
@@ -384,6 +417,7 @@ a.navbar__page--active {
   font-size: 0.8rem;
   font-weight: bolder;
   color: gray;
+  margin-bottom: 0.8rem;
 }
 
 .show__locationH--mobile {
@@ -393,6 +427,7 @@ a.navbar__page--active {
   font-size: 0.8rem;
   font-weight: bolder;
   color: gray;
+  margin-bottom: 1.8rem;
 }
 
 .buyTixButton {
@@ -403,7 +438,7 @@ a.navbar__page--active {
   border-radius: 5px;
   font-size: 0.8rem;
   font-weight: bold;
-  margin-bottom: 13.5rem;
+  border-bottom: 3px solid lightgrey;
 }
 
 @media (min-width: 320px) {

@@ -29,8 +29,9 @@ body {
 
     @include tablet {
         justify-content: flex-start;
-        align-items: center;
-        height: 4.5rem;
+        // align-items: center;
+        height: 4.9rem;
+        width: 100%;
     }
 
     @include desktop {
@@ -49,8 +50,8 @@ body {
     
         @include tablet {
             justify-self: flex-start;
-            margin: 1.9rem 1.5rem 1rem;   
-         
+            margin: 1.5rem 1rem 0rem 0rem;   
+            width: 22%;
         }
     
         @include desktop {
@@ -73,12 +74,12 @@ body {
         text-decoration: none;
     
         @include tablet {
-            width: 70%;
+            width: 50%;
             display: flex;
-            align-content: center;
+            // align-content: center;
             justify-content: flex-start;
-            padding-top: 3.3%;
-            margin-right: 2.5%;
+            padding-top: 0%;
+            margin: 2.1rem 0rem 0rem 0rem;
         }
     
         @include desktop {
@@ -98,7 +99,9 @@ body {
 
         width: 50%;
 
-        
+        @include tablet {
+            width: 25%;
+        }
     }
 
     
@@ -121,6 +124,8 @@ a.navbar__page--active {
 
     @include tablet {
         padding-bottom: 3.9%;
+        width: 20%;
+        margin-left: 2.8rem;
         // padding-top: 3%;
     }
 
@@ -147,7 +152,7 @@ a.navbar__page--active {
     align-content: center;
     
     @include tablet {
-        height: 22.6rem;
+        height: 41.6rem;
     }
 
     @include desktop {
@@ -169,9 +174,10 @@ a.navbar__page--active {
         }
     
         @include tablet {
-            font-size: 3.75rem;
-            margin: 1rem 0.4rem 1rem;        
+            font-size: 1.5rem;
+            margin: 5rem 1.5rem 1rem;        
             width: 85%;
+            font-weight: bolder;
         }
     
         @include desktop {
@@ -196,9 +202,11 @@ a.navbar__page--active {
         }
     
         @include tablet {
-            font-size: 3.75rem;
-            margin: 1rem 0.4rem 1rem;        
-            width: 85%;
+            font-size: 3.55rem;
+            font-weight: bolder;
+            margin: 1rem 1.5rem 1rem;        
+            width: 69%;
+            line-height: 5rem;
         }
     
         @include desktop {
@@ -216,6 +224,14 @@ a.navbar__page--active {
         justify-self: center;
         align-self: center;
         
+        @include tablet {
+            width: 55%;
+            height: 15rem;
+            justify-self: flex-start;
+            align-self: flex-start;
+            margin: 2rem 0rem 0rem 1.7rem;
+            padding: 0rem;
+        }
         
     }
 
@@ -239,9 +255,9 @@ a.navbar__page--active {
 
     &__title{
     font-weight: bolder;
-    font-size: 3rem;
-    margin-bottom: 3rem;
-        }
+    font-size: 1.5rem;
+    margin-bottom: 2.0rem;
+    }
 
     // &__table{
     //     display: flex;
@@ -275,8 +291,11 @@ a.navbar__page--active {
         }
 
         @include tablet{
-            width: 85%;
+            width: 90%;
             height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
 
         // @include desktop{
@@ -300,19 +319,21 @@ a.navbar__page--active {
         // border-bottom: 3px solid lightgrey;
         text-align: left;
        margin: 0.8rem 0rem 0.8rem;
-       font-size: 0.9rem;
+       font-size: 0.98rem;
        font-weight: bolder;
        
     }
 
     &__venue2{
-        font-size: 0.9rem;
-
+        font-size: 0.75rem;
+        font-weight: normal;
+        margin-bottom: 0.8rem;
     }
 
     &__location2{
-        font-size: 0.9rem;
-
+        font-size: 0.75rem;
+        font-weight: normal;
+        margin-bottom: 0.8rem;
     }
 
     &__dateH--mobile{
@@ -335,7 +356,7 @@ a.navbar__page--active {
         font-size: 0.8rem;
         font-weight: bolder;
         color: gray;
-
+        margin-bottom: 0.8rem;
     }
 
     &__locationH--mobile{
@@ -344,6 +365,7 @@ a.navbar__page--active {
         font-size: 0.8rem;
         font-weight: bolder;
         color: gray;
+        margin-bottom: 1.8rem;
 
     }
 
@@ -365,11 +387,11 @@ a.navbar__page--active {
     border-radius: 5px;
     font-size: 0.8rem;
     font-weight: bold;
-    margin-bottom: 13.5rem;
-    // border-bottom: 3px solid lightgrey;
+    border-bottom: 3px solid lightgrey;
 
     @include mobile {
         width: 100%;
+        
         margin: 1rem 0rem 1rem;
     }
 }
