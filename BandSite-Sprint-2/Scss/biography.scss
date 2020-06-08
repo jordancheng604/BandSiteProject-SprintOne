@@ -67,12 +67,13 @@ div.navbarPagesListPage--active {
 
     @include tablet {
         padding-bottom: 3.9%;
+        width: 6rem;
         // padding-top: 3%;
     }
 
     @include desktop {
         padding-bottom: 1.5em;
-        width: 0.5em;
+        width: 5.9em;
     }
 }
 .navbarPagesList {
@@ -155,7 +156,7 @@ div.navbarPagesListPage--active {
     @include tablet {
         font-size: 3.75em;
         margin: 1em 0.4em 1em;        
-        width: 85%;
+        width: 80%;
     }
 
     @include desktop {
@@ -527,7 +528,6 @@ div.navbarPagesListPage--active {
 #commentForm{
     width: 100%;
     height: auto;
-    border: 1px solid greenyellow;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

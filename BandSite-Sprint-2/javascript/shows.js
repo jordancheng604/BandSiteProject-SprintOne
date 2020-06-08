@@ -33,58 +33,114 @@ const showarr1 = [
     },
 ]
 
+//Trying edited Bio page code.
 
-//Creating the table and applying inputs from the array above.
-
-let parent = document.querySelector(".show__event");
+let parent2 = document.getElementById("containerTwo");
 
 for(let i=0;i<showarr1.length;i++){
-    
+        let showCard = document.createElement('div');
+        showCard.classList.add("show__dateContainer");
+        parent2.appendChild(showCard);
 
-   
+    let showCardC = document.createElement('span');
+    showCardC.classList.add("show__date2H--mobile");
+    showCard.appendChild(showCardC);
+    document.querySelectorAll(".show__date2H--mobile")[i].innerText= ('Date')
 
-    
+    let Card2 = document.createElement('span');
+    Card2.classList.add("show__dateShowDate");
+    showCard.appendChild(Card2);
+    document.querySelectorAll('.show__dateShowDate')[i].innerText = showarr1[i].Date
 
-    let dateHeader = document.createElement('span');
-    dateHeader.classList.add("show__dateH--mobile");
-    parent.appendChild(dateHeader);
-    document.querySelectorAll(".show__dateH--mobile")[i].innerHTML  = ('DATE');
-
-    let showCard = document.createElement('div');
-    showCard.classList.add("show__date2");
-    parent.appendChild(showCard);
-    document.querySelectorAll(".show__date2")[i].innerHTML = showarr1[i].Date
-
-   
-    
-
-     let venueHeader = document.createElement('span');
+    let venueHeader = document.createElement('span');
     venueHeader.classList.add("show__venueH--mobile");
-    parent.appendChild(venueHeader);
+    showCard.appendChild(venueHeader);
     document.querySelectorAll(".show__venueH--mobile")[i].innerHTML  = ('VENUE');
 
-    let showCard2 = document.createElement('div');
-    showCard2.classList.add("show__venue2");
-    parent.appendChild(showCard2);
-    document.querySelectorAll('.show__venue2')[i].innerHTML = showarr1[i].Venue
 
-  
+    let showCard2 = document.createElement('span');
+    showCard2.classList.add("show__venue2");
+    showCard.appendChild(showCard2);
+    document.querySelectorAll('.show__venue2')[i].innerText = showarr1[i].Venue
+
 
     let locationHeader = document.createElement('span');
     locationHeader.classList.add("show__locationH--mobile");
-    parent.appendChild(locationHeader);
+    showCard.appendChild(locationHeader);
     document.querySelectorAll(".show__locationH--mobile")[i].innerHTML  = ('LOCATION');
 
-
-    let showCard3 = document.createElement('div');
+    let showCard3 = document.createElement('span');
     showCard3.classList.add("show__location2");
-    parent.appendChild(showCard3);
-    document.querySelectorAll('.show__location2')[i].innerHTML = showarr1[i].Location
+    showCard.appendChild(showCard3);
+    document.querySelectorAll('.show__location2')[i].innerText = showarr1[i].Location
+
 
     let showCard9 = document.createElement('button');
     showCard9.classList.add("buyTixButton")
-    parent.appendChild(showCard9);
+    showCard.appendChild(showCard9);
     document.querySelectorAll('button')[i].innerHTML = ("BUY TICKETS")
+    
 }
+
+
+
+
+
+
+
+
+
+
+//Creating the table and applying inputs from the array above.
+
+// let parent = document.querySelector(".show__event");
+
+// for(let i=0;i<showarr1.length;i++){
+//     let showCardC = document.createElement('div');
+//     showCardC.classList.add("show__date2");
+//     parent.appendChild(showCardC);
+//     // document.querySelectorAll(".show__date2").append= ('Date');
+
+//     let dateHeader = document.createElement('span');
+//     dateHeader.classList.add("show__dateH--mobile");
+//     showCardC.appendChild(dateHeader);
+//     // document.querySelectorAll(".show__dateH--mobile")[i].innerHTML = ('DATE');
+
+//     let showCard = document.createElement('span');
+//     showCard.classList.add("show__date2");
+//     showCardC.appendChild(showCard);
+//     document.querySelectorAll(".show__date2")[i].innerHTML = showarr1[i].Date
+
+   
+    
+
+//      let venueHeader = document.createElement('span');
+//     venueHeader.classList.add("show__venueH--mobile");
+//     showCardC.appendChild(venueHeader);
+//     document.querySelectorAll(".show__venueH--mobile")[i].innerHTML  = ('VENUE');
+
+//     let showCard2 = document.createElement('span');
+//     showCard2.classList.add("show__venue2");
+//     showCardC.appendChild(showCard2);
+//     document.querySelectorAll('.show__venue2')[i].innerHTML = showarr1[i].Venue
+
+  
+
+//     let locationHeader = document.createElement('span');
+//     locationHeader.classList.add("show__locationH--mobile");
+//     showCardC.appendChild(locationHeader);
+//     document.querySelectorAll(".show__locationH--mobile")[i].innerHTML  = ('LOCATION');
+
+
+//     let showCard3 = document.createElement('span');
+//     showCard3.classList.add("show__location2");
+//     showCardC.appendChild(showCard3);
+//     document.querySelectorAll('.show__location2')[i].innerHTML = showarr1[i].Location
+
+//     let showCard9 = document.createElement('button');
+//     showCard9.classList.add("buyTixButton")
+//     showCardC.appendChild(showCard9);
+//     document.querySelectorAll('button')[i].innerHTML = ("BUY TICKETS")
+// }
 
 
