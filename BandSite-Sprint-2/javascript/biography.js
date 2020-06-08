@@ -1,4 +1,3 @@
-console.log('check to work work?');
 
 let arr1=[
     {
@@ -23,30 +22,6 @@ let arr1=[
     },
 ];
 
-const arr2=[
-    
-    //   {
-    //     "Michael Lyons",
-    //     "12/18/2018",
-    //     "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.",
-    //   }  
-    ,
-
-];
-
-// arr1.concat(arr2);
-
-
-//#2-Trying out a different approach.
-let list2 = document.createElement('ul');
-arr2.forEach(function (commt){
-    var li = document.createElement('div');
-    li.textContent = commt;
-    list2.appendChild(li);
-})
-
-var commentList2 = document.getElementById('commentList2');
-commentList2.appendChild(list2);
 
 
 
@@ -81,46 +56,6 @@ for(let i=0;i<arr1.length;i++){
 
 //Accepting input name and comments from end user; and to display input data on webpage comments section.
 
-
-
-// let name = [];
-// function nameC(){
-//     boxvalue = document.getElementById('nameInput').Value;
-//     name.push(boxvalue);
-//     console.log(name);
-//     name.addEventListener('submit', function(e){
-//         let commentButton = document.getElementById('commentButton');
-//         e.preventDefault();
-//     }
-//     )
-// }
-
-
-// let x = 0;
-// let array = Array();
-
-// function nameToArr(){
-//     array[x] = document.getElementById('commentForm');
-//     commentForm.addEventListener("submit", function (event){
-//     let commentButton = document.getElementById('commentButton');
-//     event.preventDefault();
-
-//     let name1 = array[x];
-
-//     document.getElementById('nameInput').value = '';
-//     }
-//     )
-// }
-
-
-// function toArray(){
-    
-// }
-
-
-
-// arr9=[{x}];
-// const x = {
 let displayComment = document.getElementById('commentForm');
 displayComment.addEventListener("submit", function (event){
 let commentButton = document.getElementById('commentButton');
@@ -135,100 +70,10 @@ let name2 = document.createElement('div');
 let input2 = event.target.textArea1.value;
 name1.innerText=input;
 name2.innerText=input2;
-let list = document.getElementById('commentList');
+let list = document.getElementById('newComment');
 list.appendChild(name1);
 list.appendChild(name2);
 document.querySelector('input').value = '';
 document.querySelector('#textArea1').value ='';
 }
 )
-// }
-
-
-
-
-//copy for backup purposes.
-// let displayComment = document.getElementById('commentForm');
-// displayComment.addEventListener("submit", function (event){
-// let commentButton = document.getElementById('commentButton');
-// // console.log(‘Comment button’, event);
-// event.preventDefault();
-// // console.log(‘Comment button clicked!’)
-
-
-// let name1 = document.createElement('div');
-// let input = event.target.nameInput.value;
-// let name2 = document.createElement('div');
-// let input2 = event.target.textArea1.value;
-// name1.innerText=input;
-// name2.innerText=input2;
-// let list = document.getElementById('commentList');
-// list.appendChild(name1);
-// list.appendChild(name2);
-// // input1.innerText=‘’;
-// document.querySelector('input').value = '';
-// document.querySelector('#textArea1').value ='';
-// // input2.innerText.value =‘null’;
-// }
-// )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function addToArray()
-// {
-// arr2[x] = document.getElementById('commentForm');
-// arr2[x].addEventListener("submit", function (event){
-// let commentButton = document.getElementById('commentButton');
-// // console.log('Comment button', event);
-// event.preventDefault();
-// // console.log('Comment button clicked!')
-// let name1 = document.createElement('div');
-// let input = event.target.nameInput.value;
-// let name2 = document.createElement('div');
-// let input2 = event.target.textArea1.value;
-// name1.innerText=input;
-// name2.innerText=input2;
-// let list = document.getElementById('commentList');
-// list.appendChild(name1);
-// list.appendChild(name2);
-// x++;
-
-// // input1.innerText='';
-// document.querySelector('input').value = "";
-// document.querySelector('#textArea1').value ='';
-// // input2.innerText.value ='null';
-
-
-// }   
-// )   
-// }
-
-
-
-
-// fuction xy()
-// {
-
-
-//   arr2[x] = document.getElementById("nameInput", "textArea1").value;  
-//   x++;
-//   addEventListener("submit", function (event){;
-//   let commentButton = document.getElementById('commentButton');
-//   event.preventDefault();
-
- 
-//   document.querySelector('input').value = "";
-//   document.querySelector('#textArea1').value ='';
-// }
-// )

@@ -385,6 +385,23 @@ a.navbar__page--active {
   }
 }
 
+@media (min-width: 1200px) {
+  .show__containerTwo {
+    width: 75%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 @media (min-width: 768px) {
   .show__containerTwo__event {
     width: 100%;
@@ -466,7 +483,7 @@ a.navbar__page--active {
 
 @media (min-width: 768px) {
   .show__venue2 {
-    width: 5rem;
+    width: 6rem;
   }
 }
 

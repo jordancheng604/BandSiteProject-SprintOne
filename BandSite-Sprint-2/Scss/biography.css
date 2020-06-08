@@ -964,6 +964,12 @@ div.navbarPagesListPage--active {
   }
 }
 
+.show__date2 {
+  margin: 1rem 0rem 0.8rem 0rem;
+  border-bottom: 1px solid lightgrey;
+  width: 99%;
+}
+
 @media (min-width: 768px) {
   .show__date2 {
     border-bottom: 1px solid gray;
@@ -977,6 +983,11 @@ div.navbarPagesListPage--active {
   .show__date2__venue2 {
     width: 25%;
   }
+}
+
+.show__date2__venue3 {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .footer {
