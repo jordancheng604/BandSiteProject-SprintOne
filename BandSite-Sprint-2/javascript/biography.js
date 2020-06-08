@@ -39,18 +39,15 @@ for(let i=0;i<arr1.length;i++){
     showCard.appendChild(Card2);
     document.querySelectorAll('.show__venue1')[i].innerText = arr1[i].Name
 
-
     let showCard2 = document.createElement('div');
     showCard2.classList.add("show__venue2");
     showCard.appendChild(showCard2);
     document.querySelectorAll('.show__venue2')[i].innerText = arr1[i].Date
 
-
     let showCard3 = document.createElement('div');
     showCard3.classList.add("show__venue3");
     showCard.appendChild(showCard3);
     document.querySelectorAll('.show__venue3')[i].innerText = arr1[i].Comment
-    
 }
 
 
@@ -61,9 +58,6 @@ displayComment.addEventListener("submit", function (event){
 let commentButton = document.getElementById('commentButton');
 console.log('Comment button', event);
 event.preventDefault();
-console.log('Comment button clicked! It is working!!!')
-
-
 let name1 = document.createElement('div');
 let input = event.target.nameInput.value;
 let name2 = document.createElement('div');

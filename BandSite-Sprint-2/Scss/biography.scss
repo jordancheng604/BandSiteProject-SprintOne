@@ -504,12 +504,13 @@ div.navbarPagesListPage--active {
 
 .comments{
     margin: 0.8rem;
+
     &__title{
         font-size: 1.6rem;
         font-weight: bold;
 
         @include tablet {
-            margin: 0rem 0.7rem 0rem;
+            margin: 0rem 1.7rem 0rem;
             font-size: 2.3rem;
         }
 
@@ -518,7 +519,6 @@ div.navbarPagesListPage--active {
             font-size: 1.98rem;
         }
     }
-
 }
 
 
@@ -727,11 +727,13 @@ div.navbarPagesListPage--active {
 
     margin: 1rem 0rem 0.8rem 0rem;
     border-bottom: 1px solid lightgrey;
+    padding-bottom: 1rem;
     width: 99%;
 
     @include tablet {
         border-bottom: 1px solid gray;
         align-self: center;
+        margin-left: 7rem;
 
         &__venue1{
             width: 25%;
@@ -739,13 +741,22 @@ div.navbarPagesListPage--active {
 
         &__venue2{
             width: 25%;
+            color: gray;
+            font-style: normal;
+            font-weight: normal;
         }
- 
     }
 
     &__venue3{
+        margin-top: 1rem;
         margin-bottom: 1rem;
+        padding-top: 1rem;
         padding-bottom: 1rem;
+    }
+
+    @include desktop {
+        margin-left: 3rem;
+        width: 95%;
     }
 }
 
