@@ -31,6 +31,45 @@ const showarr1 = [
     },
 ]
 
+const showarr2 =[]
+// const
+//https://project-1-api.herokuapp.com/showdates?api_key=d5d66f4a-686f-4232-b639-d17e6936b0be
+
+//Axios get test
+const getSDURL = 'https://project-1-api.herokuapp.com/showdates?api_key=d5d66f4a-686f-4232-b639-d17e6936b0be';
+
+const getDates = () => {
+axios.get(getSDURL)
+.then(result => console.log(result.data))
+// const geDa = res.data
+// return geDa
+// .then(result = () => {showarr2.push})
+.catch(err => console.log(err));
+}
+showarr2.push(getDates);
+
+
+// const disDates = () => {
+
+// }
+
+console.log(showarr2);
+console.log(showarr1);
+
+// function getShowdates() {
+//     axios.get('https://project-1-api.herokuapp.com/showdates?api_key=d5d66f4a-686f-4232-b639-d17e6936b0be')
+//     .then(function (response){
+//         console.log(response);
+//     })
+//     .catch(function (error) {
+//         console.log(error);
+//     })
+//     }
+
+
+
+showz = () => {
+//insert function!!!
 let parent2 = document.getElementById("containerTwo");
 for(let i=0;i<showarr1.length;i++){
         let showCard = document.createElement('div');
@@ -72,3 +111,5 @@ for(let i=0;i<showarr1.length;i++){
     showCard.appendChild(showCard9);
     document.querySelectorAll('button')[i].innerHTML = ("BUY TICKETS")
 }
+}
+showz();

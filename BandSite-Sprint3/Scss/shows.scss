@@ -1,18 +1,15 @@
 @import 'mixins';
-@font-face {
-    font-family: "Avenir";
-    src: url(/Assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf)
-}
-@font-face{
-    font-family: "Roboto";
-    src: url(/Assets/Roboto/Roboto-Regular.ttf);
+@import 'typography';
+
+html{
+    font-family: Avenir, Roboto, sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: Avenir;
+    font-family: Avenir, Roboto, sans-serif;
     
 }
 
