@@ -41,12 +41,30 @@ const getSDURL = 'https://project-1-api.herokuapp.com/showdates?api_key=d5d66f4a
 const getDates = () => {
 axios.get(getSDURL)
 .then(result => console.log(result.data))
+.then((response) => {
+    const weatherObj = response.data.list[0].main;
+
+    // success function
+    writeWeather(weatherObj)
+  })
+
+// .then((result) => {
+//     let someDates = result;
+//     console.log(someDates)
+//     // someDates(result.data);
+//     } 
+// )
 // const geDa = res.data
 // return geDa
 // .then(result = () => {showarr2.push})
 .catch(err => console.log(err));
 }
-showarr2.push(getDates);
+
+
+
+
+
+showarr2.push(getDates());
 
 
 // const disDates = () => {
