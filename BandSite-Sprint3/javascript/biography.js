@@ -53,6 +53,29 @@ function myFunction(currentValue) {
 
 }
 commz();
+
+
+let displayComment2 = document.getElementById('commentForm');
+displayComment2.addEventListener("submit", function(event){
+    event.preventDefault();
+let newVariable = { 
+    Image: "",
+    Name: "",
+    Date: "",
+    Comment: "",
+}; 
+newVariable.Name=document.querySelector('input').value;
+newVariable.Comment=document.querySelector('#textArea1').value;
+arr1.unshift(newVariable);
+document.querySelector('input').value = '';
+document.querySelector('#textArea1').value ='';
+console.log(commz());
+}
+)
+
+
+
+
 //    document.getElementById("test22").innerText=currentValue.Name;
 
 
@@ -99,29 +122,29 @@ axios.get(getCommURL)
 // }
 
 //Trying to do a forEach instead of a for loop...
-let parent2 = document.getElementById("commentList2");
+// let parent2 = document.getElementById("commentList2");
 
-let funcfunc2 = () => {
+// let funcfunc2 = () => {
 
-    arr1.forEach(currentValue => {
-        // console.log("forEach method: ", currentValue)
+//     arr1.forEach(currentValue => {
+//         // console.log("forEach method: ", currentValue)
     
-    })
+//     })
 
-    arr1.forEach(function(item){
-        arr2.unshift(item)
-    })
-
-
+//     arr1.forEach(function(item){
+//         arr2.unshift(item)
+//     })
 
 
 
 
-    arr1.forEach(getMyStuff);
-    function getMyStuff(mystuff) {
-        document.getElementsByClassName("test22").innerHTML += mystuff + "<div>";
-    }
-    console.log(getMyStuff);
+
+
+//     arr1.forEach(getMyStuff);
+//     function getMyStuff(mystuff) {
+//         document.getElementsByClassName("test22").innerHTML += mystuff + "<div>";
+//     }
+//     console.log(getMyStuff);
 
 
 
@@ -151,12 +174,20 @@ let funcfunc2 = () => {
 
 
 
-}
-funcfunc2();
-console.log(arr2);
+// }
+// funcfunc2();
+// console.log(arr2);
 
 
 
+//
+//
+//
+//
+//
+//
+//
+//this should be the original working one. works but ran into issues when adding comment.
 //#1-Showing the comments from the array.
 let parent = document.getElementById("commentList");
 
@@ -199,8 +230,15 @@ let funcfunc = (arr1) => {
 }
 };
 
-funcfunc(arr1);
+// funcfunc(arr1);
+
+
+
+
+//
 //Accepting input name and comments from end user; and to display input data on webpage comments section.
+//
+
 
 let displayComment = document.getElementById('commentForm');
 displayComment.addEventListener("submit", function(event){
@@ -241,11 +279,11 @@ document.querySelector('input').value = '';
 document.querySelector('#textArea1').value ='';
 //push to array
 
-console.log(funcfunc());
+// console.log(funcfunc());
 // arr1.splice
 
 //(arr1.length,3,'')
-}
+    }
 )
 
 
