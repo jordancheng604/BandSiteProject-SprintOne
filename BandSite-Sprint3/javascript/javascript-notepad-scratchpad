@@ -132,3 +132,60 @@ document.querySelector('#textArea1').value ='';
 //top is empty array
 //post
 //
+
+
+
+
+
+///
+////////////////////////////////////////////
+////////////////////////////////////////////
+////////////////////////////////////////////
+///
+///Original Shows table data thingy.
+
+// showz = () => {
+// //insert function!!!
+let parent2 = document.getElementById("containerTwo");
+for(let i=0;i<showarr1.length;i++){
+        let showCard = document.createElement('div');
+        showCard.classList.add("show__dateContainer");
+        parent2.appendChild(showCard);
+
+    let showCardC = document.createElement('span');
+    showCardC.classList.add("show__date2H--mobile");
+    showCard.appendChild(showCardC);
+    document.querySelectorAll(".show__date2H--mobile")[i].innerText= ('Date')
+
+    let Card2 = document.createElement('span');
+    Card2.classList.add("show__dateShowDate");
+    showCard.appendChild(Card2);
+    document.querySelectorAll('.show__dateShowDate')[i].innerText = showarr1[i].Date
+
+    let venueHeader = document.createElement('span');
+    venueHeader.classList.add("show__venueH--mobile");
+    showCard.appendChild(venueHeader);
+    document.querySelectorAll(".show__venueH--mobile")[i].innerHTML  = ('VENUE');
+
+    let showCard2 = document.createElement('span');
+    showCard2.classList.add("show__venue2");
+    showCard.appendChild(showCard2);
+    document.querySelectorAll('.show__venue2')[i].innerText = showarr1[i].Venue
+
+    let locationHeader = document.createElement('span');
+    locationHeader.classList.add("show__locationH--mobile");
+    showCard.appendChild(locationHeader);
+    document.querySelectorAll(".show__locationH--mobile")[i].innerHTML  = ('LOCATION');
+
+    let showCard3 = document.createElement('span');
+    showCard3.classList.add("show__location2");
+    showCard.appendChild(showCard3);
+    document.querySelectorAll('.show__location2')[i].innerText = showarr1[i].Location
+
+    let showCard9 = document.createElement('button');
+    showCard9.classList.add("buyTixButton")
+    showCard.appendChild(showCard9);
+    document.querySelectorAll('button')[i].innerHTML = ("BUY TICKETS")
+// }
+// }
+// showz();

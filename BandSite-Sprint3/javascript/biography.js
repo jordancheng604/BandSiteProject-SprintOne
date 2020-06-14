@@ -103,9 +103,66 @@ let arr2 = [];
 
 //Axios get test
 const getCommURL = 'https://project-1-api.herokuapp.com/comments?api_key=d5d66f4a-686f-4232-b639-d17e6936b0be';
-axios.get(getCommURL)
-.then(res => (console.log(res.data)))
-.catch(err => (console.log(err)));
+
+getCommz2 = () => {
+axios
+.get(getCommURL)
+.then(res => {console.log(res.data)
+res.data.forEach((commzAxios)=>{
+    commAx(commzAxios);
+}
+)
+})
+
+
+
+
+
+    // (console.log(res.data)))
+
+.catch(err => {
+    console.log(err)
+}
+); 
+}
+getCommz2();
+
+commAx = (commzAxios) => {
+    let parent3 = document.getElementById("axioscontainer");    
+    // arr1.forEach(myFunction);
+    // function myFunction(currentValue) {
+        let showShow = document.createElement('div');
+        showShow.classList.add("showShowComm1");
+        parent3.appendChild(showShow);
+        // document.getElementById("test22").innerText=currentValue.Name;
+    
+        let showShowPic = document.createElement('img');
+        showShowPic.classList.add("showShowPic");
+        showShow.appendChild(showShowPic);
+        // showShowPic.innerText = currentValue.Name
+    
+        let showShowName = document.createElement('div');
+        showShowName.classList.add("showShowName");
+        showShowName.innerText = `${commzAxios.name}`;
+        showShow.appendChild(showShowName);
+        // showShowName.innerText = currentValue.Name
+        // document.querySelectorAll(".showShowName").innerText='currentValue.Name';
+    
+        let showShowDate = document.createElement('div');
+        showShowDate.classList.add("showShowDate");
+        showShowDate.innerText = `${commzAxios.timestamp}`;
+        showShow.appendChild(showShowDate);
+        // showShowDate.innerText = currentValue.Date
+    
+        let showShowComment = document.createElement('div');
+        showShowComment.classList.add("showShowComment");
+        showShowComment.innerText = `${commzAxios.comment}`;
+        showShow.appendChild(showShowComment);
+        // showShowComment.innerText = currentValue.Comment   
+}
+    
+    
+    // (console.log(err)));
 
 // function getComments() {
 // axios.get('https://project-1-api.herokuapp.com/comments?api_key=d5d66f4a-686f-4232-b639-d17e6936b0be')
