@@ -1,85 +1,94 @@
 
-let arr1 = [
+// let arr1 = [
 
-    {
-        Image: "placeHOLDER",
-        Name: "Michael Lyons",
-        Date: "12/18/2018",
-        Comment: "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.",
-    },
+//     {
+//         Image: "placeHOLDER",
+//         Name: "Michael Lyons",
+//         Date: "12/18/2018",
+//         Comment: "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.",
+//     },
 
-    {
-        Image: "placeHOLDER",
-        Name: "Gary Wong",
-        Date: "12/12/2018",
-        Comment: "Every time I see him shred I feel so motivated to get off my couch and hop on my board. He's so talented! I wish I can ride like him one day so I can really enjoy myself!",
-    },
+//     {
+//         Image: "placeHOLDER",
+//         Name: "Gary Wong",
+//         Date: "12/12/2018",
+//         Comment: "Every time I see him shred I feel so motivated to get off my couch and hop on my board. He's so talented! I wish I can ride like him one day so I can really enjoy myself!",
+//     },
 
-    {
-        Image: "placeHOLDER",
-        Name: "Theodore Duncan",
-        Date: "11/15/2018",
-        Comment: "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!",
-    },
-];
+//     {
+//         Image: "placeHOLDER",
+//         Name: "Theodore Duncan",
+//         Date: "11/15/2018",
+//         Comment: "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!",
+//     },
+// ];
 
-commz = () => {
-let parent3 = document.getElementById("commentList2");    
-arr1.forEach(myFunction);
-function myFunction(currentValue) {
-    let showShow = document.createElement('div');
-    showShow.classList.add("showShowComm1");
-    parent3.appendChild(showShow);
-    // document.getElementById("test22").innerText=currentValue.Name;
+// commz = () => {
+// let parent3 = document.getElementById("commentList2");    
+// arr1.forEach(myFunction);
+// function myFunction(currentValue) {
+//     let showShow = document.createElement('div');
+//     showShow.classList.add("showShowComm1");
+//     parent3.appendChild(showShow);
+//     // document.getElementById("test22").innerText=currentValue.Name;
 
-    let showShowPic = document.createElement('img');
-    showShowPic.classList.add("showShowPic");
-    showShow.appendChild(showShowPic);
-    // showShowPic.innerText = currentValue.Name
+//     let showShowPic = document.createElement('img');
+//     showShowPic.classList.add("showShowPic");
+//     showShow.appendChild(showShowPic);
+//     // showShowPic.innerText = currentValue.Name
 
-    let showShowName = document.createElement('div');
-    showShowName.classList.add("showShowName");
-    showShow.appendChild(showShowName);
-    showShowName.innerText = currentValue.Name
-    // document.querySelectorAll(".showShowName").innerText='currentValue.Name';
+//     let showShowName = document.createElement('div');
+//     showShowName.classList.add("showShowName");
+//     showShow.appendChild(showShowName);
+//     showShowName.innerText = currentValue.Name
+//     // document.querySelectorAll(".showShowName").innerText='currentValue.Name';
 
-    let showShowDate = document.createElement('div');
-    showShowDate.classList.add("showShowDate");
-    showShow.appendChild(showShowDate);
-    showShowDate.innerText = currentValue.Date
+//     let showShowDate = document.createElement('div');
+//     showShowDate.classList.add("showShowDate");
+//     showShow.appendChild(showShowDate);
+//     showShowDate.innerText = currentValue.Date
 
-    let showShowComment = document.createElement('div');
-    showShowComment.classList.add("showShowComment");
-    showShow.appendChild(showShowComment);
-    showShowComment.innerText = currentValue.Comment
+//     let showShowComment = document.createElement('div');
+//     showShowComment.classList.add("showShowComment");
+//     showShow.appendChild(showShowComment);
+//     showShowComment.innerText = currentValue.Comment
 
-};
-}
-commz();
-
-
-let displayComment2 = document.getElementById('commentForm');
-displayComment2.addEventListener("submit", function(event){
-    event.preventDefault();
-let newVariable = { 
-    Image: "",
-    Name: "",
-    Date: "",
-    Comment: "",
-}; 
-newVariable.Name=document.querySelector('input').value;
-newVariable.Comment=document.querySelector('#textArea1').value;
-arr1.unshift(newVariable);
-document.querySelector('input').value = '';
-document.querySelector('#textArea1').value ='';
-// console.log(commz());
-commz();
-console.log(arr1);
-}
-)
+// };
+// }
+// commz();
 
 
+// let displayComment2 = document.getElementById('commentForm');
+// displayComment2.addEventListener("submit", function(event){
+//     event.preventDefault();
+// let newVariable = { 
+//     Image: "",
+//     Name: "",
+//     Date: "",
+//     Comment: "",
+// }; 
+// newVariable.Name=document.querySelector('input').value;
+// newVariable.Comment=document.querySelector('#textArea1').value;
+// arr1.unshift(newVariable);
+// document.querySelector('input').value = '';
+// document.querySelector('#textArea1').value ='';
+// // console.log(commz());
+// commz();
+// console.log(arr1);
+// }
+// )
 
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+
+
+///Everything above this is the old working stuff. Array with Dom with comment.
+
+
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
 
 //    document.getElementById("test22").innerText=currentValue.Name;
 
@@ -98,7 +107,7 @@ console.log(arr1);
 
 let arr2 = [];
 
-
+console.log(arr2);
 
 
 //Axios get test
@@ -107,12 +116,21 @@ const getCommURL = 'https://project-1-api.herokuapp.com/comments?api_key=d5d66f4
 getCommz2 = () => {
 axios
 .get(getCommURL)
-.then(res => {console.log(res.data)
-res.data.forEach((commzAxios)=>{
+.then(res => {
+console.log(res.data)
+res.data.forEach(commzAxios=>{
     commAx(commzAxios);
 }
 )
 })
+
+
+// .then(res => {console.log(res)
+//     response.data.forEach((arr2)=> {
+//     arr2.unshift;
+//     } 
+//     )
+// })
 
 
 
@@ -161,6 +179,70 @@ commAx = (commzAxios) => {
         // showShowComment.innerText = currentValue.Comment   
 }
     
+
+let displayComment3 = document.getElementById('commentForm');
+displayComment3.addEventListener("submit", function(event){
+    event.preventDefault();
+let newVariable = { 
+    Image: "",
+    name: "",
+    Date: "",
+    comment: "",
+}; 
+newVariable.name=document.querySelector('input').value;
+newVariable.comment=document.querySelector('#textArea1').value;
+
+postcommz = () => {
+axios
+.post(getCommURL,{
+    name: `${document.querySelector('input').value}`,
+    comment: `${document.querySelector('#textArea1').value}`,
+
+})
+
+.then(res => {
+    console.log(res.data)
+    res.data.forEach(commzAxios=>{
+        commAx(commzAxios)
+    }
+    //     commzAxios=>{
+    //     commAx(commzAxios);
+    // }
+    )
+    })
+
+
+// .then(res=>{console.log(res)
+    // res((commzAxios)=>{
+    //     commAx(commzAxios);
+    // });
+// })
+
+// .get(res => {console.log(res.data)
+//     res.data.forEach((commzAxios)=>{
+//         commAx(commzAxios);
+//     }
+//     )
+//     })
+
+.catch(err=>{console.log(err);});
+}
+postcommz();
+
+
+document.querySelector('input').value = '';
+document.querySelector('#textArea1').value ='';
+// console.log(commz());
+
+// getcommz2();
+
+
+// console.log(arr1);
+}
+)
+
+
+
     
     // (console.log(err)));
 
