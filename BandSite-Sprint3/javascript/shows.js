@@ -31,22 +31,108 @@ const showarr1 = [
     },
 ]
 
-const showarr2 =[]
+const showarr2 =[];
+const arr33 = [];
 // const
 //https://project-1-api.herokuapp.com/showdates?api_key=d5d66f4a-686f-4232-b639-d17e6936b0be
 
 //Axios get test
 const getSDURL = 'https://project-1-api.herokuapp.com/showdates?api_key=d5d66f4a-686f-4232-b639-d17e6936b0be';
 
-const getDates = () => {
-axios.get(getSDURL)
-.then(result => console.log(result.data))
-.then((response) => {
-    const weatherObj = response.data.list[0].main;
+getDates = () => {
+axios
+.get(getSDURL)
+.then(result => {console.log(result.data)
+result.data.forEach((showzzz)=>{
+    showTable(showzzz);
+    })
+}
+)
+// .then(res.data = arr33.push)
+// .then(res => {res.data.forEach(()=> {commz();})})
+.catch(err => {
+    console.log(err)
+    });
+}
+getDates();
+
+
+showTable = (showzzz) => {
+    let parent3 = document.getElementById("AxiosForEachShowTable2");    
+    // showarr1.forEach(myFunction);
+    // function myFunction(currentValue) {
+
+        let showShow = document.createElement('div');
+        showShow.classList.add("showShowComm1");
+        parent3.appendChild(showShow);
+        // document.getElementById("test22").innerText=currentValue.Name;
+    
+        let showShowPic = document.createElement('div');
+        showShowPic.classList.add("showShowPic");
+        showShow.appendChild(showShowPic);
+        showShowPic.innerText = '';
+    
+        let showShowName = document.createElement('div');
+        showShowName.classList.add("showShowName");
+        showShowName.innerText = `${showzzz.date}`;
+        showShow.appendChild(showShowName);
+
+        // document.querySelectorAll(".showShowName").innerText='currentValue.Name';
+    
+        let showShowDate = document.createElement('div');
+        showShowDate.classList.add("showShowDate");
+        showShow.appendChild(showShowDate);
+        showShowDate.innerText = `${showzzz.place}`;
+    
+        let showShowComment = document.createElement('div');
+        showShowComment.classList.add("showShowComment");
+        showShow.appendChild(showShowComment);
+        showShowComment.innerText = `${showzzz.location}`;
+    
+    // };
+    }
+    // showTable();
+
+
+
+
+
+
+
+
+
+// showTable = (showzzz) => {
+//     let showTable = document.getElementById('AxiosForEachShowTable2');
+    
+//     let showContainer = document.createElement("div");
+//     showContainer.classList.add('showContainerrr');
+//     // showContainer.className='showContainer';
+//     showTable.appendChild(showContainer);
+
+//     let showDate22 = document.createElement("div
+//     ")
+
+
+
+
+
+
+
+//     let showDateDate = document.createElement("div");
+//     showDateDate.className='showDateDate';
+//     showDateDate.innerText=`Date: ${showzzz.data,date}`;
+//     showContainer.appendChild(showDateDate);
+// }
+    
+    // response=arr33.push;
+    // const weatherObj = response.data.list[0].main;
 
     // success function
-    writeWeather(weatherObj)
-  })
+    // writeWeather(weatherObj)
+
+    
+    
+// .then(result => result.data(arr33.push))
 
 // .then((result) => {
 //     let someDates = result;
@@ -57,22 +143,12 @@ axios.get(getSDURL)
 // const geDa = res.data
 // return geDa
 // .then(result = () => {showarr2.push})
-.catch(err => console.log(err));
-}
 
-
-
-
-
-showarr2.push(getDates());
-
-
+// showarr2.push(getDates());
 // const disDates = () => {
-
 // }
-
-console.log(showarr2);
-console.log(showarr1);
+// console.log(arr33);
+// console.log(showarr1);
 
 // function getShowdates() {
 //     axios.get('https://project-1-api.herokuapp.com/showdates?api_key=d5d66f4a-686f-4232-b639-d17e6936b0be')
@@ -83,6 +159,52 @@ console.log(showarr1);
 //         console.log(error);
 //     })
 //     }
+
+
+// commz = () => {
+//     let parent3 = document.getElementById("AxiosForEachShowTable");    
+//     showarr1.forEach(myFunction);
+//     function myFunction(currentValue) {
+//         let showShow = document.createElement('div');
+//         showShow.classList.add("showShowComm1");
+//         parent3.appendChild(showShow);
+//         // document.getElementById("test22").innerText=currentValue.Name;
+    
+//         let showShowPic = document.createElement('img');
+//         showShowPic.classList.add("showShowPic");
+//         showShow.appendChild(showShowPic);
+//         // showShowPic.innerText = currentValue.Name
+    
+//         let showShowName = document.createElement('div');
+//         showShowName.classList.add("showShowName");
+//         showShow.appendChild(showShowName);
+//         showShowName.innerText = currentValue.Date
+//         // document.querySelectorAll(".showShowName").innerText='currentValue.Name';
+    
+//         let showShowDate = document.createElement('div');
+//         showShowDate.classList.add("showShowDate");
+//         showShow.appendChild(showShowDate);
+//         showShowDate.innerText = currentValue.Venue
+    
+//         let showShowComment = document.createElement('div');
+//         showShowComment.classList.add("showShowComment");
+//         showShow.appendChild(showShowComment);
+//         showShowComment.innerText = currentValue.Location
+    
+//     };
+//     }
+//     commz();
+
+
+
+
+
+
+
+
+
+
+
 
 
 

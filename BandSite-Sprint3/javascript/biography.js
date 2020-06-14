@@ -32,6 +32,11 @@ function myFunction(currentValue) {
     parent3.appendChild(showShow);
     // document.getElementById("test22").innerText=currentValue.Name;
 
+    let showShowPic = document.createElement('img');
+    showShowPic.classList.add("showShowPic");
+    showShow.appendChild(showShowPic);
+    // showShowPic.innerText = currentValue.Name
+
     let showShowName = document.createElement('div');
     showShowName.classList.add("showShowName");
     showShow.appendChild(showShowName);
@@ -49,8 +54,6 @@ function myFunction(currentValue) {
     showShowComment.innerText = currentValue.Comment
 
 };
-
-
 }
 commz();
 
@@ -69,7 +72,9 @@ newVariable.Comment=document.querySelector('#textArea1').value;
 arr1.unshift(newVariable);
 document.querySelector('input').value = '';
 document.querySelector('#textArea1').value ='';
-console.log(commz());
+// console.log(commz());
+commz();
+console.log(arr1);
 }
 )
 
@@ -240,11 +245,11 @@ let funcfunc = (arr1) => {
 //
 
 
-let displayComment = document.getElementById('commentForm');
-displayComment.addEventListener("submit", function(event){
-// let commentButton = document.getElementById('commentButton');
-// console.log('Comment button', event);
-event.preventDefault();
+// let displayComment = document.getElementById('commentForm');
+// displayComment.addEventListener("submit", function(event){
+// // let commentButton = document.getElementById('commentButton');
+// // console.log('Comment button', event);
+// event.preventDefault();
 
 
 // let name1 = document.createElement('div');
@@ -253,16 +258,16 @@ event.preventDefault();
 //instead of creating new elements. i just want to create objects.
 //objects will.
 //create new object
-//
-let newVariable = { 
-    Image: "",
-    Name: "",
-    Date: "",
-    Comment: "",
-}; 
+// //
+// let newVariable = { 
+//     Image: "",
+//     Name: "",
+//     Date: "",
+//     Comment: "",
+// }; 
 
-newVariable.Name=document.querySelector('input').value;
-newVariable.Comment=document.querySelector('#textArea1').value;
+// newVariable.Name=document.querySelector('input').value;
+// newVariable.Comment=document.querySelector('#textArea1').value;
 
 
 // let input2 = event.target.textArea1.value;
@@ -272,19 +277,19 @@ newVariable.Comment=document.querySelector('#textArea1').value;
 // list.appendChild(name1);
 // list.appendChild(name2);
 //adding
-arr1.unshift(newVariable);
+// arr1.unshift(newVariable);
 //axios.post goes here
 // console.log(arr1);
-document.querySelector('input').value = '';
-document.querySelector('#textArea1').value ='';
+// document.querySelector('input').value = '';
+// document.querySelector('#textArea1').value ='';
 //push to array
 
 // console.log(funcfunc());
 // arr1.splice
 
 //(arr1.length,3,'')
-    }
-)
+//     }
+// )
 
 
 //axios calls
