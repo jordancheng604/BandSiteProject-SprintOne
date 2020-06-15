@@ -434,8 +434,6 @@ a.navbar__page--active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -466,6 +464,7 @@ a.navbar__page--active {
 }
 
 .show__dateShowDate {
+  width: 90%;
   font-size: 1rem;
   font-weight: bolder;
   color: black;

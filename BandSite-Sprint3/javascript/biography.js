@@ -105,24 +105,40 @@
 // }
 // blankUnk();
 
-let arr2 = [];
+// let arr2 = [];
 
-console.log(arr2);
+// console.log(arr2);
 
 
-//Axios get test
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+//Axios - getting the information.
 const getCommURL = 'https://project-1-api.herokuapp.com/comments?api_key=d5d66f4a-686f-4232-b639-d17e6936b0be';
 
 getCommz2 = () => {
 axios
 .get(getCommURL)
+// .then(res => {
+//     console.log(res.data);
+//     res=arr2;
+//     console.log(arr2);
+// }
+// )
+
+
 .then(res => {
 console.log(res.data)
+
+// res.data=arr2.push
+
 res.data.forEach(commzAxios=>{
+    //res.data.reverse().forEach(commzAxios=>{
     commAx(commzAxios);
 }
 )
-})
+
+}
+)
 
 
 // .then(res => {console.log(res)
@@ -131,10 +147,6 @@ res.data.forEach(commzAxios=>{
 //     } 
 //     )
 // })
-
-
-
-
 
     // (console.log(res.data)))
 
@@ -145,6 +157,8 @@ res.data.forEach(commzAxios=>{
 }
 getCommz2();
 
+
+//Displaying comments.
 commAx = (commzAxios) => {
     let parent3 = document.getElementById("axioscontainer");    
     // arr1.forEach(myFunction);
@@ -177,9 +191,14 @@ commAx = (commzAxios) => {
         showShowComment.innerText = `${commzAxios.comment}`;
         showShow.appendChild(showShowComment);
         // showShowComment.innerText = currentValue.Comment   
+        
 }
-    
 
+
+
+//Taking new comment and displaying it.
+//Taking new comment and displaying it.
+//Taking new comment and displaying it.
 let displayComment3 = document.getElementById('commentForm');
 displayComment3.addEventListener("submit", function(event){
     event.preventDefault();
@@ -193,23 +212,44 @@ newVariable.name=document.querySelector('input').value;
 newVariable.comment=document.querySelector('#textArea1').value;
 
 postcommz = () => {
+    // let newVariable = { 
+    //     Image: "",
+    //     name: "",
+    //     Date: "",
+    //     comment: "",
+    // }; 
+    
 axios
 .post(getCommURL,{
     name: `${document.querySelector('input').value}`,
     comment: `${document.querySelector('#textArea1').value}`,
 
-})
+}
+)
 
 .then(res => {
     console.log(res.data)
-    res.data.forEach(commzAxios=>{
-        commAx(commzAxios)
-    }
-    //     commzAxios=>{
-    //     commAx(commzAxios);
+
+    
+    getCommz2();
+
+
+    // res.data(()=>{
+        // getCommz2();
+        
+    
+
+    // getCommz2(res.data.sort())
+
+    // res.data.forEach( () => {
+    //     getCommz2;
     // }
+    // //     commzAxios=>{
+    // //     commAx(commzAxios);
+    // // }
+    // )
+    }
     )
-    })
 
 
 // .then(res=>{console.log(res)
@@ -227,7 +267,10 @@ axios
 
 .catch(err=>{console.log(err);});
 }
+
+
 postcommz();
+// getCommz2();
 
 
 document.querySelector('input').value = '';
@@ -241,6 +284,26 @@ document.querySelector('#textArea1').value ='';
 }
 )
 
+
+
+// .newCommz
+newCommz = () => {
+    let displayComment3 = document.getElementById('newCommz')
+
+    let showShow = document.createElement('div');
+    showShow.classList.add("showShowComm1");
+    displayComment3.appendChild(showShow);
+
+    let showShowName = document.createElement('div');
+    showShowName.classList.add("showShowName");
+    showShowName.innerText = `${document.querySelector('input').value}`;
+    showShow.appendChild(showShowName);
+
+    let showShowComment = document.createElement('div');
+    showShowComment.classList.add("showShowComment");
+    showShowComment.innerText = `${document.querySelector('#textArea1').value}`;
+    showShow.appendChild(showShowComment);
+}
 
 
     
@@ -333,14 +396,14 @@ document.querySelector('#textArea1').value ='';
 //
 //this should be the original working one. works but ran into issues when adding comment.
 //#1-Showing the comments from the array.
-let parent = document.getElementById("commentList");
+// let parent = document.getElementById("commentList");
 
-let funcfunc = (arr1) => { 
-    console.log(arr1);
-    for(let i=0;i<arr1.length;i++){
-    let showCard = document.createElement('div');
-    showCard.classList.add("show__date2");
-    parent.appendChild(showCard);
+// let funcfunc = (arr1) => { 
+//     console.log(arr1);
+//     for(let i=0;i<arr1.length;i++){
+//     let showCard = document.createElement('div');
+//     showCard.classList.add("show__date2");
+//     parent.appendChild(showCard);
     // document.querySelectorAll(".show__date2")[i].innerText = arr1[i].Image
     // showCard.innerText = arr1[i]
 
@@ -350,29 +413,29 @@ let funcfunc = (arr1) => {
 
     //add a text node.
 
-    let Card2 = document.createElement('div');
-    Card2.classList.add("show__venue1");
-    showCard.appendChild(Card2);
-    Card2.innerText=arr1[i].Name
+    // let Card2 = document.createElement('div');
+    // Card2.classList.add("show__venue1");
+    // showCard.appendChild(Card2);
+    // Card2.innerText=arr1[i].Name
 
     // document.createTextNode(arr1.Name);
     // console.log(document.querySelectorAll('.show__venue1')[i]);
     // document.querySelectorAll('.show__venue1')[i].innerText = arr1[i].Name
     
 
-    let showCard2 = document.createElement('div');
-    showCard2.classList.add("show__venue2");
-    showCard.appendChild(showCard2);
-    // document.querySelectorAll('.show__venue2')[i].innerText = arr1[i].Date
-    showCard2.innerText = arr1[i].Date
+//     let showCard2 = document.createElement('div');
+//     showCard2.classList.add("show__venue2");
+//     showCard.appendChild(showCard2);
+//     // document.querySelectorAll('.show__venue2')[i].innerText = arr1[i].Date
+//     showCard2.innerText = arr1[i].Date
 
-    let showCard3 = document.createElement('div');
-    showCard3.classList.add("show__venue3");
-    showCard.appendChild(showCard3);
-    // document.querySelectorAll('.show__venue3')[i].innerText = arr1[i].Comment
-    showCard3.innerText = arr1[i].Comment
-}
-};
+//     let showCard3 = document.createElement('div');
+//     showCard3.classList.add("show__venue3");
+//     showCard.appendChild(showCard3);
+//     // document.querySelectorAll('.show__venue3')[i].innerText = arr1[i].Comment
+//     showCard3.innerText = arr1[i].Comment
+// }
+// };
 
 // funcfunc(arr1);
 

@@ -306,7 +306,7 @@ a.navbar__page--active {
         height: auto;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: flex-start;
         text-align: left;
@@ -325,6 +325,7 @@ a.navbar__page--active {
     }
 
     &__dateShowDate{
+        width: 90%;
         font-size: 1rem;
         font-weight: bolder;
         color: black;
