@@ -61,32 +61,41 @@ axios
     comment: `${document.querySelector('#textArea1').value}`,
 })
 .then(res => {
-    console.log(res.data)
-    getCommz2();
-    })
+    console.log(res.data.reverse)
+    getCommz2()
+    }
+    )
 .catch(err=>{console.log(err);});
 }
-
 postcommz();
+// newCommz();
 document.querySelector('input').value = '';
 document.querySelector('#textArea1').value ='';
 })
 
 // .newCommz
-newCommz = () => {
+newCommz2 = () => {
     let displayComment3 = document.getElementById('newCommz')
-
     let showShow = document.createElement('div');
     showShow.classList.add("showShowComm1");
     displayComment3.appendChild(showShow);
 
+    let showShowPic = document.createElement('img');
+    showShowPic.classList.add("showShowPic");
+    showShow.appendChild(showShowPic);
+
     let showShowName = document.createElement('div');
     showShowName.classList.add("showShowName");
-    showShowName.innerText = `${document.querySelector('input').value}`;
+    showShowName.innerText = `${commzAxios.name}`;
     showShow.appendChild(showShowName);
+
+    let showShowDate = document.createElement('div');
+    showShowDate.classList.add("showShowDate");
+    showShowDate.innerText = `Date: ${document.querySelector('input').value}`;
+    showShow.appendChild(showShowDate);
 
     let showShowComment = document.createElement('div');
     showShowComment.classList.add("showShowComment");
     showShowComment.innerText = `${document.querySelector('#textArea1').value}`;
-    showShow.appendChild(showShowComment);
+    showShow.appendChild(showShowComment);        
 }

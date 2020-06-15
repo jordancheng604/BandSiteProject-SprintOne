@@ -338,6 +338,20 @@ a.navbar__page--active {
         font-size: 1rem;
         font-weight: bolder;
         color: black;
+
+        @include tablet {
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            width: 12rem;
+        }
+
+        @include desktop {
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            width: 12rem;
+        }
     }
 
     &__venue2{
@@ -349,7 +363,16 @@ a.navbar__page--active {
         margin-bottom: 0.8rem;
 
         @include tablet {
-            width: 6rem;
+            width: 5rem;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+        }
+
+        @include desktop {
+            display: flex;
+            align-self: center;
+            justify-self: center;
         }
     }
 
@@ -363,6 +386,15 @@ a.navbar__page--active {
 
         @include tablet{
             width: 7rem;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+        }
+
+        @include desktop {
+            display: flex;
+            align-self: center;
+            justify-self: center;
         }
     }
     
