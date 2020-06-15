@@ -5,7 +5,7 @@ getCommz2 = () => {
 axios
 .get(getCommURL)
 .then(res => {
-console.log(res.data.reverse)
+// console.log(res.data.reverse)
 res.data.forEach(commzAxios=>{
     commAx(commzAxios);
 })})
