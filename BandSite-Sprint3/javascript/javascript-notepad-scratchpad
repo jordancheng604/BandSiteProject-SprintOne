@@ -773,4 +773,31 @@ for(let i=0;i<showarr1.length;i++){
 //     document.querySelectorAll('button')[i].innerHTML = ("BUY TICKETS")
 // }
 // }
-// showz();
+// showz();\\\
+
+
+
+
+
+
+
+
+
+// .newCommz
+newCommz = () => {
+    let displayComment3 = document.getElementById('newCommz')
+
+    let showShow = document.createElement('div');
+    showShow.classList.add("showShowComm1");
+    displayComment3.appendChild(showShow);
+
+    let showShowName = document.createElement('div');
+    showShowName.classList.add("showShowName");
+    showShowName.innerText = `${document.querySelector('input').value}`;
+    showShow.appendChild(showShowName);
+
+    let showShowComment = document.createElement('div');
+    showShowComment.classList.add("showShowComment");
+    showShowComment.innerText = `${document.querySelector('#textArea1').value}`;
+    showShow.appendChild(showShowComment);
+}

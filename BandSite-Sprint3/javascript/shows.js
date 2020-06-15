@@ -7,28 +7,20 @@ axios
 .then(result => {console.log(result.data)
 result.data.forEach((showzzz)=>{
     showTable(showzzz);
-    })
-}
-)
-// .then(res.data = arr33.push)
-// .then(res => {res.data.forEach(()=> {commz();})})
+    })})
 .catch(err => {
     console.log(err)
     });
 }
 getDates();
 
-
 showTable = (showzzz) => {
     let parent3 = document.getElementById("containerTwo");    
-    // showarr1.forEach(myFunction);
-    // function myFunction(currentValue) {
 
         let showShow = document.createElement('div');
         showShow.classList.add("show_dateContainer");
         parent3.appendChild(showShow);
-        // document.getElementById("test22").innerText=currentValue.Name;
-    
+
         let showShowPic = document.createElement('span');
         showShowPic.classList.add("show__date2H--mobile");
         showShow.appendChild(showShowPic);
@@ -38,8 +30,6 @@ showTable = (showzzz) => {
         showShowName.classList.add("show__dateShowDate");
         showShowName.innerText = `${showzzz.date}`;
         showShow.appendChild(showShowName);
-
-        // document.querySelectorAll(".showShowName").innerText='currentValue.Name';
     
         let showVenHead = document.createElement('span');
         showVenHead.classList.add("show__venueH--mobile");
@@ -65,8 +55,4 @@ showTable = (showzzz) => {
         showBuyTix.classList.add("buyTixButton");
         showShow.appendChild(showBuyTix);
         showBuyTix.innerText = 'BUY TICKETS';
-    
-    // };showBuyTix
-    }
-    // showTable();
-
+        }

@@ -757,6 +757,55 @@ div.navbarPagesListPage--active {
   display: inline-flex;
 }
 
+.showShowComm1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 15rem;
+  width: 15rem;
+}
+
+.showShowPic {
+  background-color: gray;
+  min-height: 3.1rem;
+  min-width: 3.1rem;
+  width: 3.1rem;
+  height: 3.1rem;
+  border-radius: 55%;
+  margin: 0% 0% 0%;
+}
+
+.showShowName {
+  width: 5.5rem;
+  height: 3rem;
+  margin-right: 55%;
+  margin-left: 3%;
+}
+
+.showShowDate {
+  width: 100%;
+  height: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.showShowComment {
+  height: 15rem;
+  width: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 3.9rem 0rem 3rem -19rem;
+}
+
 #goINaLINE {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -895,21 +944,37 @@ div.navbarPagesListPage--active {
 #textArea1::-webkit-input-placeholder {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding-left: 5%;
+  background-color: rgba(232, 232, 232, 0.4);
+  background-size: 1000%;
+  background-position: center;
+  height: 5rem;
 }
 
 #textArea1:-ms-input-placeholder {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding-left: 5%;
+  background-color: rgba(232, 232, 232, 0.4);
+  background-size: 1000%;
+  background-position: center;
+  height: 5rem;
 }
 
 #textArea1::-ms-input-placeholder {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding-left: 5%;
+  background-color: rgba(232, 232, 232, 0.4);
+  background-size: 1000%;
+  background-position: center;
+  height: 5rem;
 }
 
 #textArea1::placeholder {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding-left: 5%;
+  background-color: rgba(232, 232, 232, 0.4);
+  background-size: 1000%;
+  background-position: center;
+  height: 5rem;
 }
 
 @media (min-width: 768px) {
