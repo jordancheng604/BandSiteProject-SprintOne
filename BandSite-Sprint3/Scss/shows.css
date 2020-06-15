@@ -424,6 +424,18 @@ a.navbar__page--active {
   }
 }
 
+.show__containerTwo__dateContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .show__dateContainer {
   width: 90%;
   height: auto;
@@ -562,6 +574,50 @@ a.navbar__page--active {
     margin: 0rem;
     padding: 0rem;
     display: none;
+  }
+}
+
+@media (min-width: 320px) {
+  .show_dateContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .show_dateContainer {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .show__venue2 {
+    width: 15rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .show__location2 {
+    width: 15rem;
   }
 }
 
